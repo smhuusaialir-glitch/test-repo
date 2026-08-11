@@ -212,11 +212,12 @@ const visuals: Record<string, () => React.ReactElement> = {
   Camera: SocialMediaVisual,
   Globe: WebsiteDesignVisual,
   Rocket: LandingPageVisual,
-  Sparkles: AiDevVisual,
+  Sparkles: WebsiteDesignVisual,
+  Palette: SocialMediaVisual,
 }
 
 export function ServiceVisual({ icon, className }: { icon: string; className?: string }) {
-  const Visual = visuals[icon] ?? AiDevVisual
+  const Visual = visuals[icon] ?? WebsiteDesignVisual
   return (
     <div className={cn('relative overflow-hidden', className)}>
       <Visual />

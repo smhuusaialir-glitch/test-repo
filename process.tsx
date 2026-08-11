@@ -6,8 +6,8 @@ export function Process() {
   return (
     <section id="process" className="scroll-mt-24 bg-secondary/30 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Process" title={<>A simple path from <span className="text-gold-gradient">idea to launch</span></>} description="A clear, collaborative process designed to keep things smooth, transparent and focused on results." />
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <SectionHeading eyebrow="Process" title={<>A simple path from <span className="text-gold-gradient">idea to launch</span></>} description="A clear, collaborative process designed to keep decisions focused, communication simple and delivery organised." />
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {processSteps.map((step, i) => (
             <Reveal key={step.number} delay={i * 80}>
               <div className="relative h-full rounded-3xl border border-white/10 bg-card p-7">

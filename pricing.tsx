@@ -1,9 +1,9 @@
-import { Camera, Globe, Rocket, Sparkles, Check, type LucideIcon } from 'lucide-react'
+import { Camera, Globe, Palette, Sparkles, Check, type LucideIcon } from 'lucide-react'
 import { SectionHeading } from '@/components/section-heading'
 import { Reveal } from '@/components/reveal'
 import { pricing, company } from '@/lib/site-data'
 
-const iconMap: Record<string, LucideIcon> = { Camera, Globe, Rocket, Sparkles }
+const iconMap: Record<string, LucideIcon> = { Camera, Globe, Palette, Sparkles }
 
 export function Pricing() {
   return (
@@ -22,9 +22,13 @@ export function Pricing() {
                   </span>
                   <h3 className="mt-5 font-heading text-lg font-bold text-foreground">{plan.name}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{plan.description}</p>
-                  <div className="mt-5 flex items-baseline gap-1.5">
-                    <span className="font-heading text-3xl font-bold text-gold">{plan.price}</span>
-                    <span className="text-xs text-muted-foreground">{plan.unit}</span>
+                  <div className="mt-5 space-y-2 border-t border-white/10 pt-5">
+                    {plan.tiers.map((tier) => (
+                      <div key={tier.name} className="flex items-baseline justify-between gap-3">
+                        <span className="text-sm text-foreground/80">{tier.name}</span>
+                        <span className="font-heading text-xl font-bold text-gold">{tier.price}</span>
+                      </div>
+                    ))}
                   </div>
                   <ul className="mt-6 space-y-3 border-t border-white/10 pt-6">
                     {plan.features.map((feature) => (

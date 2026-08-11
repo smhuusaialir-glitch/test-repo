@@ -1,9 +1,9 @@
 export const company = {
   name: 'Hussain Designs',
   founder: 'Hussain Ali',
-  tagline: 'Premium Visual & Web Design Studio',
+  tagline: 'Modern websites and visual design for businesses and brands',
   description:
-    'Hussain Designs is a premium creative studio by Hussain Ali, specialising in social media design, website design, landing pages, and AI-assisted website development. Clean, brand-focused concepts that help businesses look and convert like luxury.',
+    'Hussain Designs is the creative practice of Hussain Ali, specialising in modern websites, graphic design, landing pages, social media design and brand visuals for businesses and brands.',
   email: 's.m.huusai.ali.r@gmail.com',
   emailHref: 'mailto:s.m.huusai.ali.r@gmail.com',
   whatsappNumber: '923482241940',
@@ -11,8 +11,10 @@ export const company = {
   whatsappHref: 'https://wa.me/923482241940',
   instagram: 'https://www.instagram.com/hussainali.designs/',
   instagramHandle: '@hussainali.designs',
+  fiverr: 'https://www.fiverr.com/s/bd4AVBY',
+  linkedin: 'https://www.linkedin.com/in/hussain-ali-712659368',
+  x: 'https://x.com/Hussainaliriz9',
   location: 'Remote · Working Worldwide',
-  foundedYear: 2024,
   contactEndpoint: '',
 }
 
@@ -38,40 +40,44 @@ export interface Service {
 
 export const services: Service[] = [
   {
+    icon: 'Globe',
+    title: 'Website Design & Development',
+    tagline: 'A polished home for your business.',
+    description: 'Responsive business websites with clear structure, thoughtful visuals and a professional experience across desktop, tablet and mobile.',
+    features: ['Custom page layouts', 'Responsive development', 'Clear content structure', 'Deployment support'],
+    cta: 'Plan my business website',
+  },
+  {
+    icon: 'Palette',
+    title: 'Graphic Design',
+    tagline: 'Visuals made to communicate clearly.',
+    description: 'Purposeful graphics for campaigns, promotions and everyday business communication, aligned with your brand direction.',
+    features: ['Posters and promotional graphics', 'Print-ready artwork', 'Custom visual direction', 'Brand-consistent styling'],
+    cta: 'Discuss a graphic project',
+  },
+  {
     icon: 'Camera',
     title: 'Social Media Design',
-    tagline: 'Stop the scroll. Start the conversation.',
-    description:
-      'Your audience judges your brand in seconds. I design scroll-stopping posters, carousels and brand kits that make your business look premium on every feed — so you attract better clients, not just likes.',
-    features: ['Post & carousel design', 'Brand kit & templates', 'Ad creative', 'Feed aesthetic direction'],
-    cta: 'Make my brand stand out',
-  },
-  {
-    icon: 'Globe',
-    title: 'Website Design',
-    tagline: 'Your website is your 24/7 salesperson.',
-    description:
-      'A premium website builds trust before you even speak to a client. I design elegant, responsive websites that communicate professionalism at every scroll — turning visitors into enquiries while you sleep.',
-    features: ['Multi-page design', 'Responsive layouts', 'UX & content structure', 'Design handoff'],
-    cta: 'Design my business website',
-  },
-  {
-    icon: 'Rocket',
-    title: 'Landing Page Design',
-    tagline: 'One page. One goal. More enquiries.',
-    description:
-      'When someone clicks your ad or link, you have seconds to convince them. I build high-converting landing pages with one clear call to action — minimal, fast and engineered to turn clicks into paying clients.',
-    features: ['Single-page conversion design', 'Hero & CTA strategy', 'Mobile-first', 'Fast & lightweight'],
-    cta: 'Build my conversion page',
+    tagline: 'Consistent content for every feed.',
+    description: 'Scroll-stopping posts, carousels and templates that help your business look considered and recognisable online.',
+    features: ['Post and carousel design', 'Content templates', 'Campaign creative', 'Feed aesthetic direction'],
+    cta: 'Improve my social presence',
   },
   {
     icon: 'Sparkles',
-    title: 'AI-Assisted Website Development',
-    tagline: 'Custom quality. Fraction of the timeline.',
-    description:
-      'Get a production-ready website that looks and performs like a custom agency build — delivered in days, not weeks. AI accelerates the repetitive work while I direct every detail of design, structure and quality.',
-    features: ['AI-assisted build', 'Production-ready code', 'SEO optimised', 'Performance focused'],
-    cta: 'Launch my website fast',
+    title: 'Branding / Visual Design',
+    tagline: 'A visual identity people remember.',
+    description: 'Cohesive visual foundations that give your business a confident, consistent and premium presence.',
+    features: ['Logo direction', 'Colour and type direction', 'Brand visual system', 'Usage-ready assets'],
+    cta: 'Shape my brand identity',
+  },
+  {
+    icon: 'Rocket',
+    title: 'Landing Pages',
+    tagline: 'One focused page for one clear goal.',
+    description: 'Focused landing pages that present your offer clearly, guide visitors through the message and make it easy to enquire.',
+    features: ['Conversion-focused structure', 'Clear calls to action', 'Mobile-first layout', 'Fast, lightweight build'],
+    cta: 'Build my landing page',
   },
 ]
 
@@ -79,94 +85,72 @@ export interface PortfolioItem {
   title: string
   category: string
   image: string | null
-  placeholder?: boolean
+  description: string
+  liveUrl?: string
 }
 
 export const portfolio: PortfolioItem[] = [
-  { title: 'Brand Poster Series', category: 'Social Media Design', image: '/images/work-1.png' },
-  { title: 'Real Estate Campaign', category: 'Poster Design', image: '/images/work-2.png' },
-  { title: 'Product Launch Creative', category: 'Social Media Design', image: '/images/work-3.png' },
-  { title: 'Reserved for Your Brand', category: 'Social Media Design', image: null, placeholder: true },
-  { title: 'Reserved for Your Brand', category: 'Website Design', image: null, placeholder: true },
-  { title: 'Reserved for Your Brand', category: 'Landing Page', image: null, placeholder: true },
+  { title: 'Brand Poster Series', category: 'Graphic Design', image: '/images/work-1.png', description: 'A polished visual series designed to give a campaign a consistent, premium direction.' },
+  { title: 'Real Estate Campaign', category: 'Social Media Design', image: '/images/work-2.png', description: 'Clear promotional graphics built to present property information with confidence.' },
+  { title: 'Product Launch Creative', category: 'Branding / Visual Design', image: '/images/work-3.png', description: 'A focused launch visual that brings product presentation and brand styling together.' },
+  { title: 'Quality Pest Control Sydney', category: 'Website Design & Development', image: null, description: 'Designed and developed a modern business website focused on presenting services clearly, building trust and encouraging customer enquiries.', liveUrl: 'https://5055fd19.quality-pest-control-sydney.pages.dev' },
 ]
+
+export interface PricingTier {
+  name: string
+  price: string
+}
 
 export interface PricingPlan {
   icon: string
   name: string
-  price: string
-  unit: string
   description: string
+  tiers: PricingTier[]
   features: string[]
   featured?: boolean
 }
 
 export const pricing: PricingPlan[] = [
-  {
-    icon: 'Camera',
-    name: 'Social Media Design',
-    price: '$25',
-    unit: 'starting from',
-    description: 'Premium post and carousel design that makes your brand stand out on every feed.',
-    features: ['Custom post design', 'Carousel layouts', 'Brand-consistent styling', '2 revisions included'],
-  },
-  {
-    icon: 'Rocket',
-    name: 'Landing Pages',
-    price: '$80',
-    unit: 'starting from',
-    description: 'A focused single-page design built to convert visitors into enquiries.',
-    features: ['Single-page design', 'Conversion-focused layout', 'Mobile responsive', '2 revisions included'],
-    featured: true,
-  },
-  {
-    icon: 'Globe',
-    name: 'Business Website',
-    price: '$120',
-    unit: 'starting from',
-    description: 'A complete multi-page website design that communicates trust and professionalism.',
-    features: ['Multi-page design', 'Responsive on all devices', 'Content structure', '3 revisions included'],
-  },
-  {
-    icon: 'Sparkles',
-    name: 'AI-Assisted Development',
-    price: '$180',
-    unit: 'starting from',
-    description: 'A production-ready website built faster with AI-assisted development.',
-    features: ['Production-ready build', 'SEO optimised', 'Performance focused', 'Ongoing support'],
-  },
+  { icon: 'Globe', name: 'Website Design & Development', description: 'Responsive websites designed around your business, content and goals.', tiers: [{ name: 'Starter', price: '$350+' }, { name: 'Professional', price: '$750+' }, { name: 'Premium', price: '$1,250+' }], features: ['Custom design and development', 'Responsive layouts', 'Clear content structure', 'Deployment support'], featured: true },
+  { icon: 'Palette', name: 'Graphic Design', description: 'Professional graphics for campaigns, promotions and business communication.', tiers: [{ name: 'Starter', price: '$50+' }, { name: 'Professional', price: '$120+' }, { name: 'Premium', price: '$250+' }], features: ['Custom visual direction', 'Brand-consistent styling', 'Production-ready assets', 'Clear revision process'] },
+  { icon: 'Camera', name: 'Social Media Design', description: 'Consistent social content that helps your business look clear and considered.', tiers: [{ name: 'Single Design', price: '$35+' }, { name: '5 Designs', price: '$150+' }, { name: '10 Designs', price: '$275+' }], features: ['Custom post design', 'Consistent visual system', 'Feed-ready exports', 'Agreed revision rounds'] },
+  { icon: 'Sparkles', name: 'Branding / Visual Design', description: 'A cohesive visual direction to help your business present itself professionally.', tiers: [{ name: 'Starter', price: '$150+' }, { name: 'Professional', price: '$300+' }, { name: 'Premium', price: '$500+' }], features: ['Visual identity direction', 'Colour and type guidance', 'Brand-ready assets', 'Organised handoff'] },
 ]
 
 export const whyChooseMe = [
-  { icon: 'Award', title: 'Premium Quality', description: 'Every design is crafted to look and feel like a high-end creative agency — never template, never generic.' },
-  { icon: 'Zap', title: 'Fast Turnaround', description: 'AI-assisted workflows mean you get premium results delivered in a fraction of the usual time.' },
-  { icon: 'Heart', title: 'Brand-Focused', description: 'Clean, intentional concepts built around your brand identity — not random stock graphics.' },
-  { icon: 'MessageCircle', title: 'WhatsApp Support', description: 'Direct, personal communication with the founder. No account managers, no delays.' },
-  { icon: 'Smartphone', title: 'Responsive First', description: 'Every design and build looks flawless on mobile, tablet and desktop from day one.' },
-  { icon: 'TrendingUp', title: 'Conversion Driven', description: 'Designs engineered to do more than look good — they turn visitors into client enquiries.' },
+  { icon: 'Award', title: 'Custom-Designed Solutions', description: 'Every project is shaped around your business, audience and visual direction rather than a one-size-fits-all template.' },
+  { icon: 'Zap', title: 'Clear Project Process', description: 'A straightforward path from discovery to delivery keeps decisions focused and the work easy to follow.' },
+  { icon: 'Heart', title: 'Business-Focused Design', description: 'The goal is not decoration alone: each layout is created to communicate your offer with clarity and confidence.' },
+  { icon: 'MessageCircle', title: 'Direct Communication', description: 'You work directly with the designer responsible for the project, with clear updates and practical conversations.' },
+  { icon: 'Smartphone', title: 'Responsive Websites', description: 'Web work is considered across mobile, tablet and desktop so your business presents well wherever it is viewed.' },
+  { icon: 'TrendingUp', title: 'International Freelance Projects', description: 'A remote-friendly process makes it simple to collaborate with businesses and brands from different locations.' },
 ]
 
 export const processSteps = [
-  { number: '01', title: 'Discovery', description: 'We start with a WhatsApp conversation about your brand, goals and vision for the project.' },
-  { number: '02', title: 'Concept', description: 'I craft clean, brand-focused design concepts and share them with you for feedback.' },
-  { number: '03', title: 'Refine', description: 'We refine the chosen direction together through clear, focused revision rounds.' },
-  { number: '04', title: 'Deliver', description: 'You receive polished, production-ready designs or a built, optimised website — ready to launch.' },
+  { number: '01', title: 'Discovery', description: 'We discuss your business, audience, goals, content and what the project needs to achieve.' },
+  { number: '02', title: 'Direction', description: 'I establish a clear visual and content direction so the project has a confident foundation.' },
+  { number: '03', title: 'Design', description: 'I develop the layouts and visual assets, keeping the work aligned with the agreed direction.' },
+  { number: '04', title: 'Development', description: 'For websites, the approved design is built into a responsive, functional experience.' },
+  { number: '05', title: 'Review', description: 'We review the work together and make the agreed refinements with clear feedback.' },
+  { number: '06', title: 'Launch', description: 'You receive organised final files or a ready-to-publish website with deployment support where needed.' },
 ]
 
 export const faqs = [
-  { question: 'How do I get started with a project?', answer: 'Simply message me on WhatsApp using the button on this page. Share a quick brief about your brand and what you need, and I will guide you through the next steps personally.' },
-  { question: 'How long does a typical project take?', answer: 'Social media designs are usually delivered within 1–3 days. Landing pages and websites typically take 3–7 days depending on scope. AI-assisted development helps keep timelines short without compromising quality.' },
-  { question: 'Do you offer revisions?', answer: 'Yes. Every package includes revisions so we can refine the work until it feels right for your brand. Additional revisions beyond the included amount are available at a small fee.' },
-  { question: 'What is AI-assisted website development?', answer: 'It is a modern approach where AI tools accelerate the build process — handling repetitive coding tasks quickly — while I direct the design, structure and quality. You get a custom, production-ready website delivered faster and more affordably.' },
-  { question: 'How do payments work?', answer: 'Payments are discussed over WhatsApp before the project begins. Typically a small deposit secures your slot, with the balance due on delivery. Details are always agreed upfront — no surprises.' },
-  { question: 'Can you work with my existing brand identity?', answer: 'Absolutely. If you already have a logo, colours or brand guidelines, I will design everything to match. If not, I can help establish a clean, consistent visual identity from scratch.' },
+  { question: 'What types of websites do you build?', answer: 'I build modern business websites, service websites, landing pages and portfolio-style sites with responsive layouts and clear calls to action.' },
+  { question: 'Do you work with international clients?', answer: 'Yes. The process is remote-friendly, with communication and project delivery handled online for businesses in different locations.' },
+  { question: 'How long does a website take?', answer: 'Timelines depend on page count, content and scope. After reviewing your brief, I will confirm a realistic delivery window before work begins.' },
+  { question: 'Can you redesign an existing website?', answer: 'Yes. I can improve the structure, visual presentation, responsiveness and clarity of an existing website while keeping what already works.' },
+  { question: 'Do you provide deployment?', answer: 'Deployment support is available for website projects. We can discuss the platform, domain and hosting requirements during discovery.' },
+  { question: 'How many revisions are included?', answer: 'The included revision rounds depend on the agreed package and scope. The details are confirmed clearly before the project starts.' },
+  { question: 'Can I request a custom package?', answer: 'Absolutely. If your needs do not fit a starting package, share your brief and I will suggest a suitable scope and quote.' },
+  { question: 'How do I get started with a project?', answer: 'Send a message through the contact form or WhatsApp with a short brief. I will reply with the next steps and any questions needed to scope the work.' },
 ]
 
-export const budgetOptions = ['Under $100', '$100 – $250', '$250 – $500', '$500 – $1,000', '$1,000+']
+export const budgetOptions = ['Under $350', '$350 – $750', '$750 – $1,250', '$1,250+']
 
 export const stats = [
-  { value: '4+', label: 'Design Disciplines' },
-  { value: '100%', label: 'Brand-Focused' },
-  { value: 'Fast', label: 'AI-Assisted Delivery' },
-  { value: '1:1', label: 'Direct Founder Support' },
+  { value: 'Selected', label: 'Work' },
+  { value: 'Direct', label: 'Communication' },
+  { value: 'Clear', label: 'Process' },
+  { value: 'Remote', label: 'Worldwide' },
 ]

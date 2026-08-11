@@ -9,7 +9,7 @@ export function WhyUs() {
   return (
     <section id="why-me" className="scroll-mt-24 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Why Choose Me" title={<>A premium experience, <span className="text-gold-gradient">end to end</span></>} description="No agencies, no middlemen. Just thoughtful design, fast delivery and direct communication with the person building your brand." />
+        <SectionHeading eyebrow="Why Choose Me" title={<>A premium experience, <span className="text-gold-gradient">end to end</span></>} description="A practical, personal approach: thoughtful design, clear communication and direct collaboration with the person building your brand." />
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {whyChooseMe.map((item, i) => {
             const Icon = iconMap[item.icon] ?? Award

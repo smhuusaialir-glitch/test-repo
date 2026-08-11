@@ -19,7 +19,7 @@ export function Hero() {
             Design that makes<br />your brand feel <span className="text-gold-gradient italic">unforgettable</span>
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground animate-fade-up sm:text-xl" style={{ animationDelay: '0.2s' }}>
-            I&apos;m Hussain Ali — a visual &amp; web designer crafting clean, brand-focused concepts. From social media to full websites, I help businesses look premium and convert with confidence.
+            I&apos;m Hussain Ali — creating modern websites and graphic design for businesses and brands. From a focused landing page to a complete visual direction, I make your business look professional and communicate with confidence.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 animate-fade-up sm:flex-row" style={{ animationDelay: '0.3s' }}>
             <a href="#contact" className="group inline-flex items-center gap-2 rounded-full bg-gold-gradient px-8 py-3.5 text-base font-semibold text-black transition-transform hover:scale-[1.03]">

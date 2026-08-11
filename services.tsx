@@ -1,10 +1,10 @@
-import { Camera, Globe, Rocket, Sparkles, ArrowUpRight, Check, type LucideIcon } from 'lucide-react'
+import { Camera, Globe, Rocket, Sparkles, Palette, ArrowUpRight, Check, type LucideIcon } from 'lucide-react'
 import { SectionHeading } from '@/components/section-heading'
 import { Reveal } from '@/components/reveal'
 import { ServiceVisual } from '@/components/service-visual'
 import { services } from '@/lib/site-data'
 
-const iconMap: Record<string, LucideIcon> = { Camera, Globe, Rocket, Sparkles }
+const iconMap: Record<string, LucideIcon> = { Camera, Globe, Rocket, Sparkles, Palette }
 
 export function Services() {
   return (
@@ -13,7 +13,7 @@ export function Services() {
         <SectionHeading
           eyebrow="Services"
           title={<>Everything your brand needs to <span className="text-gold-gradient">look premium</span></>}
-          description="Four focused services, each crafted to make your business stand out and convert — from a single post to a full website."
+          description="Focused design services to help your business communicate clearly and present a more professional, consistent presence."
         />
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2">

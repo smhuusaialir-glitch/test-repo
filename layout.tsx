@@ -24,15 +24,15 @@ const siteUrl = 'https://hussaindesigns.com'
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Hussain Designs | Premium Social Media, Website & Landing Page Design',
+    default: 'Hussain Designs | Modern Websites & Graphic Design for Businesses',
     template: '%s | Hussain Designs',
   },
   description:
-    'Hussain Designs is a premium creative studio by Hussain Ali — social media design, website design, landing pages and AI-assisted website development. Clean, brand-focused concepts that convert.',
+    'Hussain Designs creates modern websites, graphic design, landing pages, social media design and brand visuals for businesses and brands.',
   keywords: [
     'Hussain Designs', 'Hussain Ali', 'Social Media Design', 'Website Design',
-    'Landing Page Design', 'AI-Assisted Website Development', 'Premium Design Studio',
-    'Creative Agency', 'Poster Design', 'Brand Design',
+    'Landing Page Design', 'Website Development', 'Premium Design Studio',
+    'Graphic Design', 'Brand Design', 'Business Website',
   ],
   authors: [{ name: 'Hussain Ali', url: company.instagram }],
   creator: 'Hussain Ali',
@@ -45,13 +45,13 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: 'Hussain Designs',
     title: 'Hussain Designs | Premium Visual & Web Design Studio',
-    description: 'Premium social media design, website design, landing pages and AI-assisted development by Hussain Ali. Clean, brand-focused concepts that convert.',
+    description: 'Modern websites, graphic design, landing pages and brand visuals by Hussain Ali for businesses and brands.',
     images: [{ url: '/images/logo.png', width: 1254, height: 1254, alt: 'Hussain Designs logo' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Hussain Designs | Premium Visual & Web Design Studio',
-    description: 'Premium social media design, website design, landing pages and AI-assisted development by Hussain Ali.',
+    description: 'Modern websites, graphic design, landing pages and brand visuals by Hussain Ali for businesses and brands.',
     images: ['/images/logo.png'],
   },
 }
@@ -66,11 +66,9 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`dark ${cormorant.variable} ${jakarta.variable}`}>
-      <head>
-        <JsonLd />
-      </head>
       <body className="font-sans antialiased">
         {children}
+        <JsonLd />
         <WhatsAppButton />
       </body>
     </html>

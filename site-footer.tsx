@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, ArrowUp } from 'lucide-react'
+import { Mail, MessageCircle, ArrowUp, ExternalLink } from 'lucide-react'
 import { InstagramIcon } from '@/components/instagram-icon'
 import { Logo } from '@/components/logo'
 import { company, navLinks, services } from '@/lib/site-data'
@@ -30,6 +30,9 @@ export function SiteFooter() {
               <li><a href={company.whatsappHref} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-gold"><MessageCircle className="mt-0.5 size-4 shrink-0" />{company.whatsappDisplay}</a></li>
               <li><a href={company.emailHref} className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-gold"><Mail className="mt-0.5 size-4 shrink-0" />{company.email}</a></li>
               <li><a href={company.instagram} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-gold"><InstagramIcon className="mt-0.5 size-4 shrink-0" />{company.instagramHandle}</a></li>
+              <li><a href={company.fiverr} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-gold"><ExternalLink className="mt-0.5 size-4 shrink-0" />Fiverr</a></li>
+              <li><a href={company.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-gold"><ExternalLink className="mt-0.5 size-4 shrink-0" />LinkedIn</a></li>
+              <li><a href={company.x} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-gold"><ExternalLink className="mt-0.5 size-4 shrink-0" />X / Twitter</a></li>
             </ul>
           </div>
         </div>

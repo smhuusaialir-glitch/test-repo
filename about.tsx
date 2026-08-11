@@ -7,7 +7,7 @@ import { company } from '@/lib/site-data'
 const points = [
   'Clean, brand-focused design concepts',
   'Direct communication with the founder',
-  'AI-assisted delivery without compromising quality',
+  'A clear process from direction to delivery',
   'Premium aesthetic on every project, big or small',
 ]
 
@@ -30,7 +30,7 @@ export function About() {
             </div>
           </Reveal>
           <Reveal delay={120}>
-            <SectionHeading align="left" eyebrow="About" title={<>A studio built on <span className="text-gold-gradient">clean design</span> and real conversations</>} description="Hussain Designs is the creative practice of Hussain Ali — a poster and visual designer who believes great design should feel effortless, intentional and unmistakably premium." />
+            <SectionHeading align="left" eyebrow="About" title={<>A studio built on <span className="text-gold-gradient">clean design</span> and real conversations</>} description="Hussain Designs is the creative practice of Hussain Ali — a visual and web designer who believes great design should feel effortless, intentional and unmistakably premium." />
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               I work with businesses to create social media content, websites and landing pages that look like they belong to a high-end brand — not a template. Every concept is built around your identity, refined through direct conversation, and delivered with care.
             </p>

@@ -62,7 +62,7 @@ export function Contact() {
   return (
     <section id="contact" className="scroll-mt-24 bg-secondary/30 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Contact" title={<>Let&apos;s build something <span className="text-gold-gradient">premium</span></>} description="Tell me about your project and I will get back to you on WhatsApp. The more detail you share, the faster we can start." />
+        <SectionHeading eyebrow="Contact" title={<>Let&apos;s build something <span className="text-gold-gradient">premium</span></>} description="Have a project in mind? Tell me what you&apos;re building and let&apos;s create something professional together." />
         <div className="mt-14 grid gap-8 lg:grid-cols-5">
           <Reveal className="lg:col-span-2">
             <div className="flex h-full flex-col gap-4">
