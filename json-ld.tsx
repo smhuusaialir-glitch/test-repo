@@ -18,7 +18,7 @@ export function JsonLd() {
       name: 'Design Services',
       itemListElement: pricing.map((p) => ({
         '@type': 'Offer',
-        price: p.tiers[0].price.replace(/[^0-9.]/g, ''),
+        price: p.tiers[0] ? p.tiers[0].price.replace(/[^0-9.]/g, '') : '0',
         priceCurrency: 'USD',
         description: p.description,
         itemOffered: { '@type': 'Service', name: p.name },

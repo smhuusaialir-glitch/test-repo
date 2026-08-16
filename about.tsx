@@ -1,38 +1,52 @@
 import Image from 'next/image'
 import { Check } from 'lucide-react'
 import { SectionHeading } from '@/components/section-heading'
-import { Reveal } from '@/components/reveal'
 import { company } from '@/lib/site-data'
 
 const points = [
-  'Clean, brand-focused design concepts',
-  'Direct communication with the founder',
-  'A clear process from direction to delivery',
-  'Premium aesthetic on every project, big or small',
+  'Every project starts from a blank file',
+  'You talk to me — the person doing the work',
+  'A six-step process, not a black box',
+  'Built for the phone first, expanded to desktop',
 ]
 
 export function About() {
   return (
-    <section id="about" className="scroll-mt-24 py-20 lg:py-28">
+    <section id="about" className="scroll-mt-24 py-20 lg:pt-28 lg:pb-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <Reveal>
-            <div className="relative">
-              <div className="absolute -inset-3 rounded-3xl bg-gold/10 blur-2xl" />
-              <div className="relative overflow-hidden rounded-3xl border border-white/10">
-                <Image src="/images/logo.png" alt="Hussain Designs — brand mark" width={1254} height={1254} className="aspect-square w-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
-              </div>
-              <div className="absolute -bottom-5 -right-3 rounded-2xl border border-gold/30 bg-background/90 px-5 py-3 backdrop-blur-md sm:-right-5">
-                <p className="font-heading text-sm font-bold text-gold">Hussain Ali</p>
-                <p className="text-xs text-muted-foreground">Founder &amp; Designer</p>
-              </div>
+        {/* Asymmetric: image and text stretch to the same height, like the service cards. */}
+        <div className="grid items-stretch gap-10 lg:grid-cols-12 lg:gap-16">
+          <div className="relative h-full min-h-[300px] lg:col-span-5">
+            {/* Creative environment image — fills the full text column height */}
+            <div className="relative h-full overflow-hidden rounded-2xl border border-white/10 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.8)]">
+              <Image
+                src="/images/about-creative.jpg"
+                alt="A digital design creative environment with design work on screen"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
             </div>
-          </Reveal>
-          <Reveal delay={120}>
-            <SectionHeading align="left" eyebrow="About" title={<>A studio built on <span className="text-gold-gradient">clean design</span> and real conversations</>} description="Hussain Designs is the creative practice of Hussain Ali — a visual and web designer who believes great design should feel effortless, intentional and unmistakably premium." />
+            {/* Name plate — solid, offset and slightly off the card edge */}
+            <div className="absolute -bottom-4 -right-3 border border-gold/30 bg-background px-5 py-3 sm:-right-5">
+              <p className="font-heading text-sm font-bold text-gold">Hussain Ali</p>
+              <p className="text-xs text-muted-foreground">Founder &amp; Designer</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center lg:col-span-7">
+            <SectionHeading
+              align="left"
+              eyebrow="About"
+              title={<>A studio of one, <span className="text-gold-gradient">on purpose</span></>}
+              description="Hussain Designs is the creative practice of Hussain Ali — a visual and web designer who works alone, by choice."
+            />
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              I work with businesses to create social media content, websites and landing pages that look like they belong to a high-end brand — not a template. Every concept is built around your identity, refined through direct conversation, and delivered with care.
+              I work with small businesses and service companies to build websites, social content and brand visuals
+              that look like they belong to a real business — not a template someone else is also using. Every concept
+              is drawn around your identity, refined through direct conversation with me, and delivered with the files
+              actually organised.
             </p>
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
               {points.map((point) => (
@@ -44,11 +58,11 @@ export function About() {
                 </li>
               ))}
             </ul>
-            <div className="mt-10 flex flex-wrap items-center gap-6">
-              <a href={company.instagram} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-gold transition-colors hover:text-gold-soft">{company.instagramHandle}</a>
+            <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/10 pt-6">
+              <a href={company.instagram} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-gold transition-colors hover:text-champagne">{company.instagramHandle}</a>
               <span className="text-sm text-muted-foreground">{company.location}</span>
             </div>
-          </Reveal>
+          </div>
         </div>
       </div>
     </section>

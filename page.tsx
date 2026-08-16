@@ -5,6 +5,7 @@ import { Services } from '@/components/services'
 import { Portfolio } from '@/components/portfolio'
 import { Pricing } from '@/components/pricing'
 import { WhyUs } from '@/components/why-us'
+import { Testimonials } from '@/components/testimonials'
 import { Process } from '@/components/process'
 import { Faq } from '@/components/faq'
 import { Contact } from '@/components/contact'
@@ -19,10 +20,11 @@ export default function Page() {
         <Hero />
         <About />
         <Services />
-        <Portfolio />
-        <Pricing />
-        <WhyUs />
         <Process />
+        <Portfolio />
+        <WhyUs />
+        <Testimonials />
+        <Pricing />
         <Faq />
         <Contact />
       </main>

@@ -25,7 +25,7 @@ export function Navbar() {
 
   return (
     <header className={cn('fixed inset-x-0 top-0 z-50 transition-all duration-500', scrolled ? 'border-b border-white/10 bg-background/85 backdrop-blur-xl' : 'border-b border-transparent bg-transparent')}>
-      <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+      <nav className={cn('mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 transition-[height] duration-300 sm:px-6 lg:px-8', scrolled ? 'h-16' : 'h-20')}>
         <Link href="#hero" aria-label={`${company.name} home`}>
           <Logo />
         </Link>
