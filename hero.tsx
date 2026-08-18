@@ -10,7 +10,6 @@ export function Hero() {
     <section id="hero" className="relative flex min-h-screen items-center overflow-hidden pt-24">
       {/* Hand-placed diagonal rule as an anchoring mark — not a glow orb */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-0 top-1/3 hidden h-px w-1/4 rule-diagonal opacity-40 lg:block" />
         <div className="absolute right-8 top-28 hidden size-2 rounded-full bg-gold/60 lg:block" />
         <div className="absolute right-24 bottom-32 hidden size-1.5 rounded-full bg-champagne/50 lg:block" />
       </div>
@@ -21,15 +20,7 @@ export function Hero() {
             Stacks on mobile with image below the content. */}
         <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-7">
-            {/* Eyebrow with a hand-placed mark instead of a pill badge */}
-            <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.25em] text-gold">
-              <span className="h-px w-8 bg-gold/60" />
-              <span>Hussain Ali</span>
-              <span className="text-muted-foreground/60">—</span>
-              <span className="text-champagne/80">Visual &amp; Web Design</span>
-            </div>
-
-            <h1 className="mt-7 text-balance text-5xl font-bold leading-[1.02] tracking-tight text-foreground sm:text-6xl lg:text-[4.25rem]">
+            <h1 className="text-balance text-5xl font-bold leading-[1.02] tracking-tight text-foreground sm:text-6xl lg:text-[4.25rem]">
               Websites and visuals
               <br className="hidden sm:block" />
               <span className="sm:hidden"> </span>

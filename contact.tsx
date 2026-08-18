@@ -73,18 +73,27 @@ export function Contact() {
               <div className="border border-white/10 bg-card p-6">
                 <h3 className="font-heading text-lg font-bold text-foreground">Get in touch</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">WhatsApp is the fastest way to reach me. I personally read and reply to every message.</p>
-                <div className="mt-6 space-y-3">
-                  <a href={company.whatsappHref} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 border border-white/10 bg-white/5 p-4 transition-colors hover:border-gold/30">
-                    <span className="flex size-11 shrink-0 items-center justify-center bg-gold/15 text-gold"><MessageCircle className="size-5" /></span>
-                    <div><p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">WhatsApp</p><p className="text-sm font-bold text-foreground">{company.whatsappDisplay}</p></div>
+                <div className="mt-6 divide-y divide-white/10">
+                  <a href={company.whatsappHref} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 py-4 transition-colors hover:text-gold">
+                    <MessageCircle className="size-6 shrink-0 text-gold" strokeWidth={1.6} />
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground group-hover:text-gold">WhatsApp</p>
+                      <p className="text-sm font-bold text-foreground group-hover:text-gold">{company.whatsappDisplay}</p>
+                    </div>
                   </a>
-                  <a href={company.emailHref} className="flex items-center gap-4 border border-white/10 bg-white/5 p-4 transition-colors hover:border-gold/30">
-                    <span className="flex size-11 shrink-0 items-center justify-center bg-gold/15 text-gold"><Mail className="size-5" /></span>
-                    <div className="min-w-0"><p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Email</p><p className="truncate text-sm font-bold text-foreground">{company.email}</p></div>
+                  <a href={company.emailHref} className="group flex items-center gap-4 py-4 transition-colors hover:text-gold">
+                    <Mail className="size-6 shrink-0 text-gold" strokeWidth={1.6} />
+                    <div className="min-w-0">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground group-hover:text-gold">Email</p>
+                      <p className="truncate text-sm font-bold text-foreground group-hover:text-gold">{company.email}</p>
+                    </div>
                   </a>
-                  <a href={company.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 border border-white/10 bg-white/5 p-4 transition-colors hover:border-gold/30">
-                    <span className="flex size-11 shrink-0 items-center justify-center bg-gold/15 text-gold"><InstagramIcon className="size-5" /></span>
-                    <div><p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Instagram</p><p className="text-sm font-bold text-foreground">{company.instagramHandle}</p></div>
+                  <a href={company.instagram} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 py-4 transition-colors hover:text-gold">
+                    <InstagramIcon className="size-6 shrink-0 text-gold" />
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground group-hover:text-gold">Instagram</p>
+                      <p className="text-sm font-bold text-foreground group-hover:text-gold">{company.instagramHandle}</p>
+                    </div>
                   </a>
                 </div>
               </div>

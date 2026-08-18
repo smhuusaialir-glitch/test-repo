@@ -20,8 +20,8 @@ export function Portfolio() {
         <div className="mt-14 grid gap-6 md:grid-cols-2">
           {portfolio.map((item, i) => (
             <article key={`${item.title}-${i}`} className="group border border-white/10 bg-card">
-              {/* Image box — same aspect, object-contain so the whole artwork shows */}
-              <figure className="relative aspect-[4/3] w-full bg-secondary/30">
+              {/* Image box — 4:5 portrait, object-contain so the whole artwork shows */}
+              <figure className="relative aspect-[4/5] w-full bg-secondary/30">
                 {item.image ? (
                   <Image
                     src={item.image}
@@ -29,7 +29,7 @@ export function Portfolio() {
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     loading={i === 0 ? 'eager' : 'lazy'}
-                    className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.02]"
+                    className="h-full w-full object-contain object-center p-3 transition-transform duration-500 group-hover:scale-[1.02]"
                   />
                 ) : (
                   <PortfolioVisual category="Website Design" className="h-full w-full" />
