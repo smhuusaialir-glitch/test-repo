@@ -7,7 +7,7 @@ const iconMap: Record<string, LucideIcon> = { Camera, Globe, Rocket, Sparkles, P
 
 export function Services() {
   return (
-    <section id="services" className="scroll-mt-24 bg-secondary/30 py-20 lg:pt-14 lg:pb-28">
+    <section id="services" className="scroll-mt-24 bg-secondary/30 py-14 lg:pt-10 lg:pb-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           align="left"
@@ -16,7 +16,7 @@ export function Services() {
           description="Five focused services. Each one starts from a blank file and is shaped around your business — not pulled from a folder of starter themes."
         />
 
-        <div className="mt-14 space-y-10 lg:space-y-14">
+        <div className="mt-10 space-y-8 lg:space-y-10">
           {services.map((service, i) => {
             const Icon = iconMap[service.icon] ?? Sparkles
             const hasImage = Boolean(service.image)
@@ -104,7 +104,7 @@ export function Services() {
         </div>
 
         {/* Bottom banner — different shape from the cards above */}
-        <div className="mt-12 flex flex-col items-start justify-between gap-6 border-l-2 border-gold/40 bg-gradient-to-r from-gold/[0.06] to-transparent p-8 sm:flex-row sm:items-center">
+        <div className="mt-10 flex flex-col items-start justify-between gap-6 border-l-2 border-gold/40 bg-gradient-to-r from-gold/[0.06] to-transparent p-7 sm:flex-row sm:items-center">
           <div>
             <h3 className="font-heading text-xl font-bold text-foreground">
               Not sure which service fits?

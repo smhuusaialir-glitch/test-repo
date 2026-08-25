@@ -12,10 +12,10 @@ const points = [
 
 export function About() {
   return (
-    <section id="about" className="scroll-mt-24 py-20 lg:pt-28 lg:pb-14">
+    <section id="about" className="scroll-mt-24 py-14 lg:pt-20 lg:pb-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Asymmetric: image and text stretch to the same height, like the service cards. */}
-        <div className="grid items-stretch gap-10 lg:grid-cols-12 lg:gap-16">
+        <div className="grid items-stretch gap-8 lg:grid-cols-12 lg:gap-12">
           <div className="relative h-full min-h-[300px] lg:col-span-5">
             {/* Creative environment image — fills the full text column height */}
             <div className="relative h-full overflow-hidden rounded-2xl border border-white/10 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.8)]">
@@ -43,8 +43,8 @@ export function About() {
               description="Hussain Designs is the creative practice of Hussain Ali — a visual and web designer who works alone, by choice."
             />
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              I work with small businesses and service companies to build websites, social content and brand visuals
-              that look like they belong to a real business — not a template someone else is also using. Every concept
+              I help brands build websites, social content and brand visuals that feel like they belong to one
+              business — not a template someone else is also using. Every concept
               is drawn around your identity, refined through direct conversation with me, and delivered with the files
               actually organised.
             </p>
@@ -58,7 +58,7 @@ export function About() {
                 </li>
               ))}
             </ul>
-            <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/10 pt-6">
+            <div className="mt-8 flex flex-col items-start justify-between gap-3 border-t border-white/10 pt-5 sm:flex-row sm:items-center sm:gap-4">
               <a href={company.instagram} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-gold transition-colors hover:text-champagne">{company.instagramHandle}</a>
               <span className="text-sm text-muted-foreground">{company.location}</span>
             </div>

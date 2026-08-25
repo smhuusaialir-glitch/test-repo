@@ -3,7 +3,7 @@ import { processSteps } from '@/lib/site-data'
 
 export function Process() {
   return (
-    <section id="process" className="scroll-mt-24 bg-secondary/30 py-20 lg:py-28">
+    <section id="process" className="scroll-mt-24 bg-secondary/30 py-14 lg:py-20">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Process"
@@ -12,7 +12,7 @@ export function Process() {
         />
 
         {/* Two-column process: number on the left, content on the right — no overlap. */}
-        <ol className="mt-14 space-y-10">
+        <ol className="mt-10 space-y-8">
           {processSteps.map((step, i) => (
             <li key={step.number} className="grid gap-4 sm:grid-cols-[4rem_1fr] sm:items-start">
               {/* Number in its own column, never touching the heading */}

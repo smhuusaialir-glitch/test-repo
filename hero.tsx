@@ -9,12 +9,9 @@ export function Hero() {
   return (
     <section id="hero" className="relative flex min-h-screen items-center overflow-hidden pt-24">
       {/* Hand-placed diagonal rule as an anchoring mark — not a glow orb */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute right-8 top-28 hidden size-2 rounded-full bg-gold/60 lg:block" />
-        <div className="absolute right-24 bottom-32 hidden size-1.5 rounded-full bg-champagne/50 lg:block" />
-      </div>
+      <div className="pointer-events-none absolute inset-0" />
 
-      <div className="relative mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <div className="relative mx-auto w-full max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         {/* Asymmetric two-column: text left, laptop image right.
             Items aligned to top so image tops line up with the headline top.
             Stacks on mobile with image below the content. */}
@@ -28,9 +25,9 @@ export function Hero() {
             </h1>
 
             <p className="mt-7 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-              I&apos;m Hussain — a solo designer working with small businesses and service companies.
-              Websites, landing pages, social content and brand visuals. No page builder, no recycled
-              template, no account manager between us.
+              I help brands build a presence that feels intentional — websites, landing pages, social
+              content and brand visuals, all drawn from the same place. No page builder, no recycled
+              template, no one between you and the work.
             </p>
 
             {/* Asymmetric button row: primary left, secondary as a quiet text link */}
@@ -73,7 +70,7 @@ export function Hero() {
         </div>
 
         {/* Stats strip — centered */}
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-2 justify-items-center gap-x-8 gap-y-8 border-l-2 border-gold/30 pl-6 sm:grid-cols-4 sm:pl-8">
+        <div className="mx-auto mt-12 grid max-w-2xl grid-cols-2 justify-items-center gap-x-8 gap-y-6 border-l-2 border-gold/30 pl-6 sm:grid-cols-4 sm:pl-8">
           {stats.map((stat) => (
             <div key={stat.label}>
               <div className="font-heading text-2xl font-bold text-gold sm:text-[1.75rem]">{stat.value}</div>

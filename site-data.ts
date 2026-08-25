@@ -83,6 +83,7 @@ export const services: Service[] = [
     description: 'A single focused page for a launch, a service or an ad campaign — built to carry one message clearly and point the reader at one action.',
     features: ['Structure written around a single conversion goal', 'One clear call to action, repeated where it helps', 'Mobile-first, because that is where it loads', 'Lightweight build — fast even on slow data'],
     cta: 'Build my landing page',
+    image: '/images/service-landing.jpg',
   },
 ]
 

@@ -3,7 +3,7 @@ import { whyChooseMe } from '@/lib/site-data'
 
 export function WhyUs() {
   return (
-    <section id="why-me" className="scroll-mt-24 py-20 lg:py-28">
+    <section id="why-me" className="scroll-mt-24 py-14 lg:py-20">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           align="left"
@@ -14,13 +14,13 @@ export function WhyUs() {
 
         {/* Converted from 3 identical cards to an editorial list with large numbers.
             Alternating alignment so no two rows look structurally identical. */}
-        <div className="mt-14 divide-y divide-white/10 border-t border-white/10">
+        <div className="mt-10 divide-y divide-white/10 border-t border-white/10">
           {whyChooseMe.map((item, i) => {
             const flip = i % 2 === 1
             return (
               <div
                 key={item.title}
-                className={`group grid gap-5 py-9 sm:grid-cols-12 sm:items-start ${flip ? 'sm:[direction:rtl]' : ''}`}
+                className={`group grid gap-5 py-7 sm:grid-cols-12 sm:items-start ${flip ? 'sm:[direction:rtl]' : ''}`}
               >
                 {/* Large number — the structural anchor, replaces the identical icon badge */}
                 <div className="sm:col-span-2 sm:[direction:ltr]">
@@ -35,10 +35,8 @@ export function WhyUs() {
                   <p className="mt-2.5 max-w-xl text-base leading-relaxed text-muted-foreground">{item.description}</p>
                 </div>
 
-                {/* A small hand-placed mark on the right — a dot, not an icon */}
-                <div className="hidden sm:col-span-1 sm:flex sm:justify-end sm:[direction:ltr]">
-                  <span className="mt-2 size-1.5 rounded-full bg-gold/50 transition-colors group-hover:bg-gold" />
-                </div>
+                {/* Removed unnecessary dot mark */}
+                <div className="hidden sm:col-span-1 sm:[direction:ltr]" />
               </div>
             )
           })}

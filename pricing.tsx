@@ -4,7 +4,7 @@ import { pricing, company } from '@/lib/site-data'
 
 export function Pricing() {
   return (
-    <section id="pricing" className="scroll-mt-24 bg-secondary/30 py-20 lg:py-28">
+    <section id="pricing" className="scroll-mt-24 bg-secondary/30 py-14 lg:py-20">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Pricing"
@@ -13,7 +13,7 @@ export function Pricing() {
         />
 
         {/* Clean list with a number, the service, and a clearly separated price block */}
-        <div className="mt-14 divide-y divide-white/10 border-y border-white/10">
+        <div className="mt-10 divide-y divide-white/10 border-y border-white/10">
           {pricing.map((plan, i) => {
             const featured = plan.featured
             return (
@@ -77,7 +77,7 @@ export function Pricing() {
           })}
         </div>
 
-        <p className="mt-10 border-l-2 border-gold/30 pl-5 text-sm text-muted-foreground">
+        <p className="mt-8 border-l-2 border-gold/30 pl-5 text-sm text-muted-foreground">
           Need something that doesn&apos;t fit these starting points?{' '}
           <a href="#contact" className="font-semibold text-gold transition-colors hover:text-champagne">Tell me what you&apos;re building</a>
           {' '}and I&apos;ll scope it properly.
