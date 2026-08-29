@@ -28,7 +28,7 @@ export function SiteFooter() {
             <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-gold">Get in Touch</h3>
             <ul className="mt-5 space-y-4">
               <li><a href={company.whatsappHref} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-gold"><MessageCircle className="mt-0.5 size-4 shrink-0" />{company.whatsappDisplay}</a></li>
-              <li><a href={company.emailHref} className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-gold"><Mail className="mt-0.5 size-4 shrink-0" />{company.email}</a></li>
+              <li><a href={company.emailHref} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-gold"><Mail className="mt-0.5 size-4 shrink-0" />{company.email}</a></li>
               <li><a href={company.instagram} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-gold"><InstagramIcon className="mt-0.5 size-4 shrink-0" />{company.instagramHandle}</a></li>
               <li><a href={company.fiverr} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-gold"><ExternalLink className="mt-0.5 size-4 shrink-0" />Fiverr</a></li>
               <li><a href={company.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-gold"><ExternalLink className="mt-0.5 size-4 shrink-0" />LinkedIn</a></li>

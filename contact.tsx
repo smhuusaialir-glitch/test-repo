@@ -117,7 +117,7 @@ export function Contact() {
                       <p className="text-sm font-bold text-foreground group-hover:text-gold">{company.whatsappDisplay}</p>
                     </div>
                   </a>
-                  <a href={company.emailHref} className="group flex items-center gap-4 py-4 transition-colors hover:text-gold">
+                  <a href={company.emailHref} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 py-4 transition-colors hover:text-gold">
                     <Mail className="size-6 shrink-0 text-gold" strokeWidth={1.6} />
                     <div className="min-w-0">
                       <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground group-hover:text-gold">Email</p>

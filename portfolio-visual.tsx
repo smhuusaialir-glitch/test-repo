@@ -121,7 +121,7 @@ const visuals: Record<string, () => React.ReactElement> = {
 export function PortfolioVisual({ category, className }: { category: string; className?: string }) {
   const Visual = visuals[category] ?? WebsiteMockup
   return (
-    <div className={cn('relative h-full w-full overflow-hidden bg-secondary/30 p-4', className)}>
+    <div className={cn('relative h-full w-full overflow-hidden bg-secondary/30', className)}>
       <Visual />
     </div>
   )

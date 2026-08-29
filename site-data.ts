@@ -4,8 +4,8 @@ export const company = {
   tagline: 'Modern websites and visual design for businesses and brands',
   description:
     'Hussain Designs is the creative practice of Hussain Ali — a solo designer building websites, landing pages, social content and brand visuals for small businesses and service companies.',
-  email: 's.m.hussain.ali.r@gmail.com',
-  emailHref: 'mailto:s.m.hussain.ali.r@gmail.com',
+  email: 'hussain.designs061@gmail.com',
+  emailHref: 'mailto:hussain.designs061@gmail.com',
   whatsappNumber: '923482241940',
   whatsappDisplay: '+92 348 2241940',
   whatsappHref: 'https://wa.me/923482241940',

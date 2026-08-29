@@ -29,7 +29,7 @@ export function Portfolio() {
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     loading={i === 0 ? 'eager' : 'lazy'}
-                    className="h-full w-full bg-[#111] object-contain object-center"
+                    className="h-full w-full object-cover object-center"
                   />
                 ) : (
                   <PortfolioVisual category="Website Design" className="h-full w-full" />
