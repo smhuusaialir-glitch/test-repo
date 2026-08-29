@@ -21,7 +21,7 @@ export function Portfolio() {
           {portfolio.map((item, i) => (
             <article key={`${item.title}-${i}`} className="group flex h-full min-w-0 flex-col border border-white/10 bg-card">
               {/* Image box — 4:5 portrait, object-cover so every card is the same size */}
-              <figure className="relative aspect-[4/5] w-full shrink-0 overflow-hidden bg-secondary/30">
+              <figure className="relative aspect-square w-full shrink-0 overflow-hidden bg-secondary/30">
                 {item.image ? (
                   <Image
                     src={item.image}
