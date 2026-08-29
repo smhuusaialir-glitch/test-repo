@@ -7,14 +7,14 @@ import { faqs, company } from '@/lib/site-data'
 
 export function Faq() {
   return (
-    <section id="faq" className="scroll-mt-24 py-14 lg:py-20">
+    <section id="faq" className="scroll-mt-24 py-8 lg:py-12">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="FAQ"
           title={<>Questions, <span className="text-gold-gradient">answered straight</span></>}
           description="The things people actually ask before starting a project. Still unclear on something? Message me on WhatsApp."
         />
-        <Accordion className="mt-10 border-y border-white/10 px-6">
+        <Accordion className="mt-8 border-y border-white/10 px-6">
           {faqs.map((faq, i) => (
             <AccordionItem key={faq.question} value={`item-${i}`} className="border-white/10">
               <AccordionTrigger>{faq.question}</AccordionTrigger>

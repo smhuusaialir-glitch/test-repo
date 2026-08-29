@@ -3,7 +3,7 @@ import { whyChooseMe } from '@/lib/site-data'
 
 export function WhyUs() {
   return (
-    <section id="why-me" className="scroll-mt-24 py-14 lg:py-20">
+    <section id="why-me" className="scroll-mt-24 py-8 lg:py-12">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           align="left"
@@ -14,7 +14,7 @@ export function WhyUs() {
 
         {/* Converted from 3 identical cards to an editorial list with large numbers.
             Alternating alignment so no two rows look structurally identical. */}
-        <div className="mt-10 divide-y divide-white/10 border-t border-white/10">
+        <div className="mt-8 divide-y divide-white/10 border-t border-white/10">
           {whyChooseMe.map((item, i) => {
             const flip = i % 2 === 1
             return (

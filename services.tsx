@@ -7,7 +7,7 @@ const iconMap: Record<string, LucideIcon> = { Camera, Globe, Rocket, Sparkles, P
 
 export function Services() {
   return (
-    <section id="services" className="scroll-mt-24 bg-secondary/30 py-14 lg:pt-10 lg:pb-20">
+    <section id="services" className="scroll-mt-24 bg-secondary/30 py-8 lg:py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           align="left"
@@ -16,7 +16,7 @@ export function Services() {
           description="Five focused services. Each one starts from a blank file and is shaped around your business — not pulled from a folder of starter themes."
         />
 
-        <div className="mt-10 space-y-8 lg:space-y-10">
+        <div className="mt-8 space-y-8 lg:space-y-10">
           {services.map((service, i) => {
             const Icon = iconMap[service.icon] ?? Sparkles
             const hasImage = Boolean(service.image)
@@ -43,7 +43,7 @@ export function Services() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent" />
                       {/* Icon badge over the image — solid, no glassmorphism */}
-                      <div className="absolute left-5 top-5 flex size-11 items-center justify-center border border-gold/30 bg-background text-gold transition-colors group-hover:bg-gold group-hover:text-black">
+                      <div className="absolute left-3 top-3 flex size-11 items-center justify-center border border-gold/30 bg-background text-gold transition-colors group-hover:bg-gold group-hover:text-black lg:left-5 lg:top-5">
                         <Icon className="size-5" strokeWidth={1.6} />
                       </div>
                     </div>
@@ -104,7 +104,7 @@ export function Services() {
         </div>
 
         {/* Bottom banner — different shape from the cards above */}
-        <div className="mt-10 flex flex-col items-start justify-between gap-6 border-l-2 border-gold/40 bg-gradient-to-r from-gold/[0.06] to-transparent p-7 sm:flex-row sm:items-center">
+        <div className="mt-8 flex flex-col items-start justify-between gap-6 border-l-2 border-gold/40 bg-gradient-to-r from-gold/[0.06] to-transparent p-7 sm:flex-row sm:items-center">
           <div>
             <h3 className="font-heading text-xl font-bold text-foreground">
               Not sure which service fits?

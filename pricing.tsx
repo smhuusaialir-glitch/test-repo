@@ -4,7 +4,7 @@ import { pricing, company } from '@/lib/site-data'
 
 export function Pricing() {
   return (
-    <section id="pricing" className="scroll-mt-24 bg-secondary/30 py-14 lg:py-20">
+    <section id="pricing" className="scroll-mt-24 bg-secondary/30 py-8 lg:py-12">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Pricing"
@@ -13,7 +13,7 @@ export function Pricing() {
         />
 
         {/* Clean list with a number, the service, and a clearly separated price block */}
-        <div className="mt-10 divide-y divide-white/10 border-y border-white/10">
+        <div className="mt-8 divide-y divide-white/10 border-y border-white/10">
           {pricing.map((plan, i) => {
             const featured = plan.featured
             return (

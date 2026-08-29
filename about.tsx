@@ -12,7 +12,7 @@ const points = [
 
 export function About() {
   return (
-    <section id="about" className="scroll-mt-24 py-14 lg:pt-20 lg:pb-10">
+    <section id="about" className="scroll-mt-24 py-8 lg:py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Asymmetric: image and text stretch to the same height, like the service cards. */}
         <div className="grid items-stretch gap-8 lg:grid-cols-12 lg:gap-12">

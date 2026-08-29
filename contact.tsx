@@ -62,10 +62,10 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="scroll-mt-24 bg-secondary/30 py-14 lg:py-20">
+    <section id="contact" className="scroll-mt-24 bg-secondary/30 py-8 lg:py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {submitted ? (
-          <div className="mx-auto max-w-2xl py-10 text-center">
+          <div className="mx-auto max-w-2xl py-6 text-center lg:py-10">
             <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-gold/15 text-gold">
               <CheckCircle2 className="size-8" strokeWidth={1.6} />
             </div>
@@ -103,7 +103,7 @@ export function Contact() {
           title={<>Tell me what you&apos;re <span className="text-gold-gradient">building</span></>}
           description="A sentence about your business and what you need is enough. I read every message myself and reply on WhatsApp."
         />
-        <div className="mt-10 grid gap-8 lg:grid-cols-5">
+        <div className="mt-8 grid gap-8 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div className="flex h-full flex-col gap-4">
               <div className="border border-white/10 bg-card p-6">
