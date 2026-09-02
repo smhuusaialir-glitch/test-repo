@@ -1,12 +1,8 @@
-feat: professional case study for Quality Pest Control Sydney
+fix: tighten case study headings and trim text for scannability
 
-- Added dedicated /case-studies/quality-pest-control-sydney page
-- Full case study: challenge (outdated site), approach, solution, results, features, tech stack
-- Portfolio card now links to case study page with "View case study" button
-- Fixed nav order to match page section order
-- Fixed JSON-LD price for custom-quoted services
-- Fixed contact form: URL encoding and service validation
-- Removed "small" from company description
+- Reduced heading sizes across the case study page
+- Shortened challenge, approach, solution, and section copy
+- Tightened results and features lists
 
 Generated with [Devin](https://devin.ai)
 
