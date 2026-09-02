@@ -3,7 +3,7 @@ export const company = {
   founder: 'Hussain Ali',
   tagline: 'Modern websites and visual design for businesses and brands',
   description:
-    'Hussain Designs is the creative practice of Hussain Ali — a solo designer building websites, landing pages, social content and brand visuals for small businesses and service companies.',
+    'Hussain Designs is the creative practice of Hussain Ali — a solo designer building websites, landing pages, social content and brand visuals for businesses and service companies.',
   email: 'hussain.designs061@gmail.com',
   emailHref: 'mailto:hussain.designs061@gmail.com',
   whatsappNumber: '923482241940',
@@ -21,10 +21,10 @@ export const company = {
 export const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
-  { label: 'Portfolio', href: '#portfolio' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'Why Me', href: '#why-me' },
   { label: 'Process', href: '#process' },
+  { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Why Me', href: '#why-me' },
+  { label: 'Pricing', href: '#pricing' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -87,20 +87,99 @@ export const services: Service[] = [
   },
 ]
 
+export interface CaseStudySection {
+  heading: string
+  body: string
+}
+
+export interface CaseStudy {
+  slug: string
+  client: string
+  project: string
+  category: string
+  liveUrl: string
+  summary: string
+  challenge: string
+  approach: string
+  solution: string
+  results: string[]
+  features: string[]
+  techStack: string[]
+  sections: CaseStudySection[]
+}
+
 export interface PortfolioItem {
   title: string
   category: string
   image: string | null
   description: string
   liveUrl?: string
+  caseStudySlug?: string
 }
 
 export const portfolio: PortfolioItem[] = [
-  { title: 'Quality Pest Control Sydney', category: 'Website Design & Development', image: null, description: 'A business website built to present pest control services clearly, load fast and turn visitors into phone enquiries. Hand-coded, responsive, deployed to the client domain.', liveUrl: 'https://5055fd19.quality-pest-control-sydney.pages.dev' },
+  { title: 'Quality Pest Control Sydney', category: 'Website Design & Development', image: null, description: 'A business website built to present pest control services clearly, load fast and turn visitors into phone enquiries. Hand-coded, responsive, deployed to the client domain.', liveUrl: 'https://5055fd19.quality-pest-control-sydney.pages.dev', caseStudySlug: 'quality-pest-control-sydney' },
   { title: 'Brand Poster Series', category: 'Graphic Design', image: '/images/work-1.png', description: 'A poster series for a campaign — one visual language carried across four formats so the set reads as one piece, not four separate jobs.' },
   { title: 'Real Estate Campaign', category: 'Social Media Design', image: '/images/work-2.png', description: 'Listing graphics for a property campaign. Property details, price and contact laid out so a viewer on a phone can read them in three seconds.' },
   { title: 'Product Launch Creative', category: 'Branding / Visual Design', image: '/images/work-3.png', description: 'A launch visual that ties product photography, type and colour into one composition — used across the announcement and the sales page.' },
 ]
+
+export const caseStudies: Record<string, CaseStudy> = {
+  'quality-pest-control-sydney': {
+    slug: 'quality-pest-control-sydney',
+    client: 'Quality Pest Control Sydney',
+    project: 'Business Website Design & Development',
+    category: 'Website Design & Development',
+    liveUrl: 'https://5055fd19.quality-pest-control-sydney.pages.dev',
+    summary: 'A complete business website for a Sydney-based pest control company — designed and built from scratch to present services clearly, load fast on mobile, and convert visitors into phone enquiries.',
+    challenge: 'The client was operating with an outdated website that looked dated, loaded slowly, and did not reflect the professionalism of their service. On mobile — where most of their potential customers were searching — the old site was difficult to navigate, had tiny tap targets, and buried the phone number below the fold. In a competitive Sydney pest control market filled with generic templated sites, the client needed a credible, modern online presence that would build trust with stressed homeowners and businesses dealing with an urgent pest problem, and make it effortless for them to pick up the phone and call.',
+    approach: 'I started with a discovery conversation to understand the client\'s services, their frustrations with the old website, target audience, and competitive landscape. From there I developed a written direction covering the page structure, colour palette, typography, and content hierarchy. The old site\'s content was audited and restructured — not copied across — so the new site would communicate services clearly rather than dumping everything on one cluttered page. The design was built mobile-first, since most people searching for pest control are on their phone dealing with an urgent problem. Every page was structured around a single goal: get the visitor to call or message.',
+    solution: 'A hand-coded, responsive website with a clean, professional design. The homepage leads with a clear value proposition and a prominent call-to-action. Service pages are structured around what the customer needs to know — what the pest is, how it\'s treated, and why to call now. The entire site is lightweight with no heavy frameworks or page builders, meaning it loads fast even on slow mobile data.',
+    results: [
+      'Replaced an outdated, slow-loading website with a modern, professional online presence',
+      'Fast-loading pages — the site loads in under 2 seconds on a 4G connection',
+      'Clear service presentation that eliminates visitor confusion',
+      'Prominent click-to-call and WhatsApp contact options on every page',
+      'Professional design that stands apart from generic templated competitors',
+      'Fully responsive — works seamlessly on phone, tablet, and desktop',
+      'Deployed to the client domain with proper SEO metadata',
+    ],
+    features: [
+      'Mobile-first responsive layout',
+      'Click-to-call phone numbers on every page',
+      'WhatsApp integration for quick enquiries',
+      'Service-specific pages with clear treatment information',
+      'SEO-optimised meta tags and structured data',
+      'Fast, lightweight build — no page builder, no heavy frameworks',
+      'Accessible navigation and readable typography',
+      'Contact form with service selection',
+    ],
+    techStack: [
+      'Hand-coded HTML/CSS/JS',
+      'Responsive design (mobile-first)',
+      'Cloudflare Pages deployment',
+      'SEO metadata and structured data',
+    ],
+    sections: [
+      {
+        heading: 'Discovery & Research',
+        body: 'The client\'s existing website was outdated — slow to load, difficult to navigate on mobile, and visually stuck in an earlier era of web design. The phone number was buried, service information was disorganised, and the site did not build the kind of trust a pest control customer needs before making a call. I began by understanding the Sydney pest control market, what customers actually search for, and what information a visitor needs before they trust a company enough to call. The key insight: visitors are often stressed, dealing with an urgent pest problem, and they want to find a credible, professional service fast. The old site was adding friction instead of removing it.',
+      },
+      {
+        heading: 'Design Direction',
+        body: 'The visual direction was built around trust and clarity. A clean, professional colour palette with strong contrast for readability. Typography chosen for legibility on small screens. Every page was wireframed mobile-first, with the call-to-action placed where the thumb naturally rests. The design avoids the cluttered, template-heavy look that dominates the pest control industry.',
+      },
+      {
+        heading: 'Development',
+        body: 'The site was hand-coded — no page builder, no heavy framework. This keeps the page weight minimal and load times fast. Each service page was built as a standalone, SEO-optimised page with its own meta description, headings, and structured data. The navigation was kept simple and accessible, with a sticky header containing the phone number on mobile so it\'s always one tap away.',
+      },
+      {
+        heading: 'Launch & Deployment',
+        body: 'The site was deployed to Cloudflare Pages for fast global delivery and reliable uptime. SEO metadata, Open Graph tags, and structured data were configured so the site is indexed correctly and looks professional when shared. The client was given handover notes and stayed supported for the first week after launch.',
+      },
+    ],
+  },
+}
 
 export interface PricingTier {
   name: string

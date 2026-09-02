@@ -21,6 +21,12 @@ export function Contact() {
     e.preventDefault()
     const form = e.target as HTMLFormElement
     const data = new FormData(form)
+
+    if (!selectedService) {
+      toast.error('Please select a service.')
+      return
+    }
+
     const payload = {
       name: (data.get('name') as string)?.trim(),
       email: (data.get('email') as string)?.trim(),
@@ -42,14 +48,15 @@ export function Contact() {
         return
       }
       await new Promise((r) => setTimeout(r, 600))
+      const enc = encodeURIComponent
       const message = `*New Project Enquiry — Hussain Designs*%0A%0A` +
-        `*Name:* ${payload.name || '-'}%0A` +
-        `*Email:* ${payload.email || '-'}%0A` +
-        `*Phone:* ${payload.phone || '-'}%0A` +
-        `*Business:* ${payload.business || '-'}%0A` +
-        `*Service:* ${payload.service || '-'}%0A` +
-        `*Budget:* ${payload.budget || '-'}%0A` +
-        `*Details:* ${payload.details || '-'}`
+        `*Name:* ${enc(payload.name || '-')}%0A` +
+        `*Email:* ${enc(payload.email || '-')}%0A` +
+        `*Phone:* ${enc(payload.phone || '-')}%0A` +
+        `*Business:* ${enc(payload.business || '-')}%0A` +
+        `*Service:* ${enc(payload.service || '-')}%0A` +
+        `*Budget:* ${enc(payload.budget || '-')}%0A` +
+        `*Details:* ${enc(payload.details || '-')}`
       window.open(`${company.whatsappHref}?text=${message}`, '_blank', 'noopener,noreferrer')
       toast.success('Opening WhatsApp with your enquiry details…')
       form.reset(); setSelectedService(''); setSelectedBudget('')

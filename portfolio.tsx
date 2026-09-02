@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 import { InstagramIcon } from '@/components/instagram-icon'
 import { PortfolioVisual } from '@/components/portfolio-visual'
@@ -20,7 +21,7 @@ export function Portfolio() {
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {portfolio.map((item, i) => (
             <article key={`${item.title}-${i}`} className="group flex h-full min-w-0 flex-col border border-white/10 bg-card">
-              {/* Image box — 4:5 portrait, object-cover so every card is the same size */}
+              {/* Image box — square, object-cover so every card is the same size */}
               <figure className="relative aspect-square w-full shrink-0 overflow-hidden bg-secondary/30">
                 {item.image ? (
                   <Image
@@ -41,17 +42,28 @@ export function Portfolio() {
                 <p className="text-xs font-semibold uppercase tracking-wider text-gold">{item.category}</p>
                 <h3 className="mt-1 font-heading text-lg font-bold text-foreground">{item.title}</h3>
                 <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
-                {item.liveUrl && (
-                  <a
-                    href={item.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-gold transition-colors hover:text-champagne"
-                  >
-                    View live site
-                    <ArrowUpRight className="size-3.5" />
-                  </a>
-                )}
+                <div className="mt-auto flex flex-wrap items-center gap-4 pt-4">
+                  {item.caseStudySlug && (
+                    <Link
+                      href={`/case-studies/${item.caseStudySlug}`}
+                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-gold transition-colors hover:text-champagne"
+                    >
+                      View case study
+                      <ArrowUpRight className="size-3.5" />
+                    </Link>
+                  )}
+                  {item.liveUrl && (
+                    <a
+                      href={item.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-gold"
+                    >
+                      Live site
+                      <ArrowUpRight className="size-3.5" />
+                    </a>
+                  )}
+                </div>
               </div>
             </article>
           ))}
