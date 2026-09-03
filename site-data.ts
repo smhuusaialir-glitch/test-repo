@@ -112,19 +112,19 @@ export const serviceProcedures: Record<string, ServiceProcedure> = {
     slug: 'website-design',
     title: 'Website Design & Development',
     tagline: 'A real home for your business online.',
-    intro: 'A website is not a brochure, it is the first place a potential customer goes to decide if they trust you. Here is how I build one that actually does the job.',
+    intro: 'A website is not a brochure. It is the first place a potential customer goes to decide if they trust you. Here is how I build one that actually does the job.',
     sections: [
       {
         heading: 'Why your business needs a proper website',
-        body: 'Social media is rented space. You do not own the platform, the algorithm, or the reach. A website is the one place online where you control the message, the layout, and the experience, completely. When someone searches for your business, the website is what tells them you are real, credible, and professional. Without one, you are leaving that first impression to a Facebook page or an Instagram bio.',
+        body: 'Social media is rented space. You do not own the platform, the algorithm, or the reach. A website is the one place online where you control the message, the layout, and the experience completely. When someone searches for your business, the website is what tells them you are real, credible, and professional. Without one, you are leaving that first impression to a Facebook page or an Instagram bio.',
       },
       {
         heading: 'How I improve your existing website',
-        body: 'If you already have a website that is slow, outdated, or hard to navigate on mobile, I rebuild it from the ground up. I audit your current content, restructure it around what your customers actually need to know, and design a clean, fast, responsive layout that works on every device. No page builder, no heavy framework, just hand-coded pages that load fast and read clearly.',
+        body: 'If you already have a website that is slow, outdated, or hard to navigate on mobile, I rebuild it from the ground up. I audit your current content, restructure it around what your customers actually need to know, and design a clean, fast, responsive layout that works on every device. No page builder, no heavy framework. Just hand-coded pages that load fast and read clearly.',
       },
       {
         heading: 'How we work together',
-        body: 'Discovery call to understand your business and audience. I come back with a written direction, page structure, type, colour, content hierarchy. You approve it before any pixel is drawn. I build the site, you review it, we refine it over two revision rounds, and I deploy it to your domain with handover notes. You are never left guessing what stage the project is at.',
+        body: 'Discovery call to understand your business and audience. I come back with a written direction: page structure, type, colour, content hierarchy. You approve it before any pixel is drawn. I build the site, you review it, we refine it over two revision rounds, and I deploy it to your domain with handover notes. You are never left guessing what stage the project is at.',
       },
     ],
     outcomes: [
@@ -138,19 +138,18 @@ export const serviceProcedures: Record<string, ServiceProcedure> = {
     slug: 'graphic-design',
     title: 'Graphic Design',
     tagline: 'Visuals that say what you mean.',
-    intro: 'Good graphic design is not decoration, it is communication. Here is how I create visuals that actually carry your message.',
+    intro: 'Good graphic design is not decoration. It is communication. Here is how I create visuals that actually carry your message.',
     sections: [
       {
         heading: 'Why professional visuals matter',
-        body: 'People judge a business by how it looks before they read a single word. A poster, a flyer, or a social graphic that is poorly laid out tells the viewer you cut corners. Professional visuals communicate that you take your business seriously, and by extension, you will take their project seriously too.',
-      },
+        body: 'People judge a business by how it looks before they read a single word. A poster, a flyer, or a social graphic that is poorly laid out tells the viewer you cut corners. Professional visuals communicate that you take your business seriously, and by extension, you will take their project seriously too.',      },
       {
         heading: 'How I build visuals from your brand',
-        body: 'I do not start from a stock template. I start from your brand, your colours, your type, your tone. Every piece is drawn around your identity so the set reads as one body of work, not a collection of unrelated downloads. Print artwork is delivered at correct bleed and DPI, ready for the printer. Digital artwork is exported in the right formats for every platform.',
+        body: 'I do not start from a stock template. I start from your brand: your colours, your type, your tone. Every piece is drawn around your identity so the set reads as one body of work, not a collection of unrelated downloads. Print artwork is delivered at correct bleed and DPI, ready for the printer. Digital artwork is exported in the right formats for every platform.',
       },
       {
         heading: 'How we work together',
-        body: 'You tell me what the piece is for and who it needs to reach. I come back with a direction, layout, colour, type. You approve, I build the final artwork, and we refine over two revision rounds. Files are delivered organised and labelled, not as a flat export dumped in a folder.',
+        body: 'You tell me what the piece is for and who it needs to reach. I come back with a direction: layout, colour, type. You approve, I build the final artwork, and we refine over two revision rounds. Files are delivered organised and labelled, not as a flat export dumped in a folder.',
       },
     ],
     outcomes: [
@@ -168,15 +167,15 @@ export const serviceProcedures: Record<string, ServiceProcedure> = {
     sections: [
       {
         heading: 'Why your feed needs a consistent system',
-        body: 'A feed that looks like ten different designers made it tells the viewer you do not have a brand. A consistent grid, type pair, and colour set tells them you are organised, intentional, and worth following. The visuals you post are a direct reflection of how you run your business, make them look like they belong together.',
+        body: 'A feed that looks like ten different designers made it tells the viewer you do not have a brand. A consistent grid, type pair, and colour set tells them you are organised, intentional, and worth following. The visuals you post are a direct reflection of how you run your business. Make them look like they belong together.',
       },
       {
         heading: 'How I use AI video to boost your content',
-        body: 'AI-generated video is now a serious tool for reels, shorts, and social content. I create AI videos that fit your brand, motion graphics, animated text, visual effects, and short-form video content that sits naturally next to your static posts. This is not generic AI output; each video is directed around your colour palette, type, and message so it reads as part of your feed, not a random clip.',
+        body: 'AI-generated video is now a serious tool for reels, shorts, and social content. I create AI videos that fit your brand: motion graphics, animated text, visual effects, and short-form video content that sits naturally next to your static posts. This is not generic AI output; each video is directed around your colour palette, type, and message so it reads as part of your feed, not a random clip.',
       },
       {
         heading: 'How we work together',
-        body: 'I audit your current feed and come back with a visual direction, grid system, type pair, colour set, and content formats. You approve the direction. I build posts, carousels, AI videos, and editable templates your team can reuse. We refine over two revision rounds, and you receive a content set that is ready to schedule.',
+        body: 'I audit your current feed and come back with a visual direction: grid system, type pair, colour set, and content formats. You approve the direction. I build posts, carousels, AI videos, and editable templates your team can reuse. We refine over two revision rounds, and you receive a content set that is ready to schedule.',
       },
     ],
     outcomes: [
@@ -190,15 +189,15 @@ export const serviceProcedures: Record<string, ServiceProcedure> = {
     slug: 'branding',
     title: 'Branding / Visual Design',
     tagline: 'The pieces that make you recognisable.',
-    intro: 'A brand is not a logo, it is the set of rules that keep you looking like one business everywhere. Here is how I build one.',
+    intro: 'A brand is not a logo. It is the set of rules that keep you looking like one business everywhere. Here is how I build one.',
     sections: [
       {
         heading: 'Why you need a brand system',
-        body: 'Without a brand system, every touchpoint, your website, your social posts, your business card, your flyer, looks slightly different. Over time, this erodes recognition. A brand system keeps your colours, type, and logo usage consistent across every platform, so a customer recognises you instantly, wherever they encounter you.',
+        body: 'Without a brand system, every touchpoint (your website, your social posts, your business card, your flyer) looks slightly different. Over time, this erodes recognition. A brand system keeps your colours, type, and logo usage consistent across every platform, so a customer recognises you instantly, wherever they encounter you.',
       },
       {
         heading: 'How I shape your identity',
-        body: 'I do not deliver a 60-page brand book nobody will read. I deliver a short, practical system, logo direction with variants, a colour palette, a type pairing, and a few usage rules that are easy to follow. Enough to keep you consistent, not so much that it becomes a document that sits in a folder and is never opened.',
+        body: 'I do not deliver a 60-page brand book nobody will read. I deliver a short, practical system: logo direction with variants, a colour palette, a type pairing, and a few usage rules that are easy to follow. Enough to keep you consistent, not so much that it becomes a document that sits in a folder and is never opened.',
       },
       {
         heading: 'How we work together',
@@ -216,19 +215,18 @@ export const serviceProcedures: Record<string, ServiceProcedure> = {
     slug: 'landing-pages',
     title: 'Landing Pages',
     tagline: 'One page, one job.',
-    intro: 'A landing page is not a homepage, it is a single page built to do one thing. Here is how I build one that converts.',
+    intro: 'A landing page is not a homepage. It is a single page built to do one thing. Here is how I build one that converts.',
     sections: [
       {
         heading: 'Why a landing page is different from a website',
-        body: 'Your website presents your whole business. A landing page presents one offer, one launch, or one campaign, and it exists to drive one action. Whether you are running ads, launching a product, or promoting a service, a focused landing page converts better than sending traffic to a homepage where the visitor gets lost in navigation.',
-      },
+        body: 'Your website presents your whole business. A landing page presents one offer, one launch, or one campaign, and it exists to drive one action. Whether you are running ads, launching a product, or promoting a service, a focused landing page converts better than sending traffic to a homepage where the visitor gets lost in navigation.',      },
       {
         heading: 'How I build a page that converts',
-        body: 'I start from the conversion goal, what do you want the visitor to do? Every section is then structured around that single action. One clear call to action, repeated where it helps. Mobile-first, because that is where most of your traffic loads. Lightweight build, so the page is fast even on slow data. No distractions, no unnecessary sections, no wasted space.',
+        body: 'I start from the conversion goal: what do you want the visitor to do? Every section is then structured around that single action. One clear call to action, repeated where it helps. Mobile-first, because that is where most of your traffic loads. Lightweight build, so the page is fast even on slow data. No distractions, no unnecessary sections, no wasted space.',
       },
       {
         heading: 'How we work together',
-        body: 'You tell me the goal, sign-ups, sales, enquiries, downloads. I come back with a page structure written around that goal. You approve, I build it, we refine over two revision rounds, and I deploy it. The page is lightweight, fast, and focused on one job.',
+        body: 'You tell me the goal: sign-ups, sales, enquiries, downloads. I come back with a page structure written around that goal. You approve, I build it, we refine over two revision rounds, and I deploy it. The page is lightweight, fast, and focused on one job.',
       },
     ],
     outcomes: [

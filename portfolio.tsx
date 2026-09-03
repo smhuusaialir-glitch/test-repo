@@ -26,7 +26,7 @@ export function Portfolio() {
                 {item.image ? (
                   <Image
                     src={item.image}
-                    alt={`${item.title}, ${item.category}`}
+                    alt={`${item.title} | ${item.category}`}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     loading={i === 0 ? 'eager' : 'lazy'}

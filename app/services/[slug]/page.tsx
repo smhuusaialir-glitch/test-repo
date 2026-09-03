@@ -12,7 +12,7 @@ export function generateMetadata({ params }: { params: Promise<{ slug: string }>
     const procedure = serviceProcedures[p.slug]
     if (!procedure) return {}
     return {
-      title: `${procedure.title} : How It Works`,
+      title: `${procedure.title} | How It Works`,
       description: procedure.intro,
     }
   })
@@ -51,7 +51,7 @@ export default function ServiceProcedurePage({ params }: { params: Promise<{ slu
               <div className="mt-6 overflow-hidden rounded-2xl border border-white/10">
                 <img
                   src={service.image}
-                  alt={`${procedure.title} : visual`}
+                  alt={`${procedure.title} visual`}
                   className="aspect-[16/9] w-full object-cover"
                 />
               </div>

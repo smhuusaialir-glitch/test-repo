@@ -49,7 +49,7 @@ export function Contact() {
       }
       await new Promise((r) => setTimeout(r, 600))
       const enc = encodeURIComponent
-      const message = `*New Project Enquiry, Hussain Designs*%0A%0A` +
+      const message = `*New Project Enquiry | Hussain Designs*%0A%0A` +
         `*Name:* ${enc(payload.name || '-')}%0A` +
         `*Email:* ${enc(payload.email || '-')}%0A` +
         `*Phone:* ${enc(payload.phone || '-')}%0A` +
@@ -77,7 +77,7 @@ export function Contact() {
               <CheckCircle2 className="size-8" strokeWidth={1.6} />
             </div>
             <h2 className="mt-6 font-heading text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Thank you, your enquiry is in.
+              Thank you. Your enquiry is in.
             </h2>
             <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
               I&apos;ve received your details and will personally reply on WhatsApp shortly. If you opened WhatsApp

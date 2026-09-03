@@ -3,8 +3,8 @@ import { ArrowLeft, ArrowUpRight, Check, ExternalLink } from 'lucide-react'
 import { caseStudies } from '@/lib/site-data'
 
 export const metadata = {
-  title: 'Case Study : Quality Pest Control Sydney',
-  description: 'A complete business website redesign for a Sydney pest control company : replacing an outdated site with a fast, professional, mobile-first online presence built to convert visitors into phone enquiries.',
+  title: 'Case Study | Quality Pest Control Sydney',
+  description: 'A complete business website redesign for a Sydney pest control company, replacing an outdated site with a fast, professional, mobile-first online presence built to convert visitors into phone enquiries.',
 }
 
 export default function QualityPestControlCaseStudy() {

@@ -1,12 +1,10 @@
-feat: service procedure pages, AI videos, and dash cleanup
+fix: comma splices from dash removal, footer links, and page titles
 
-- Added 5 dedicated /services/[slug] procedure pages with 3 sections each
-- Added AI video creation to Social Media Design service
-- Added "How it works" links to each service card
-- Widened case study layout and improved heading hierarchy
-- Removed em dashes and en dashes across the entire website
-- Replaced dash separators with commas, colons, or parentheses
-- Updated budget ranges to use "to" instead of dash symbols
+- Fixed comma splices across hero, pricing, contact, and service procedures
+- Replaced awkward colons in page titles with pipe separator
+- Footer services now link to dedicated procedure pages
+- Fixed alt text formatting and WhatsApp message header
+- Thank you page heading punctuation fixed
 
 Generated with [Devin](https://devin.ai)
 

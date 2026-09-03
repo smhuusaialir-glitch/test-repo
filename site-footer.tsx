@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Mail, MessageCircle, ArrowUp, ExternalLink } from 'lucide-react'
 import { InstagramIcon } from '@/components/instagram-icon'
 import { Logo } from '@/components/logo'
@@ -21,7 +22,7 @@ export function SiteFooter() {
           <div>
             <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-gold">Services</h3>
             <ul className="mt-5 space-y-3">
-              {services.map((s) => (<li key={s.title}><a href="#services" className="text-sm text-muted-foreground transition-colors hover:text-gold">{s.title}</a></li>))}
+              {services.map((s) => (<li key={s.title}><Link href={`/services/${s.slug}`} className="text-sm text-muted-foreground transition-colors hover:text-gold">{s.title}</Link></li>))}
             </ul>
           </div>
           <div>

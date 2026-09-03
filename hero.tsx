@@ -25,7 +25,7 @@ export function Hero() {
             </h1>
 
             <p className="mt-7 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-              I help brands build a presence that feels intentional, websites, landing pages, social
+              I help brands build a presence that feels intentional: websites, landing pages, social
               content and brand visuals, all drawn from the same place. No page builder, no recycled
               template, no one between you and the work.
             </p>

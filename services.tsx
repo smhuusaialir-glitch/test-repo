@@ -37,7 +37,7 @@ export function Services() {
                     <div className={`relative h-full min-h-[320px] overflow-hidden lg:min-h-full ${imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
                       <Image
                         src={service.image!}
-                        alt={`${service.title}, visual`}
+                        alt={`${service.title} visual`}
                         fill
                         sizes="(max-width: 1024px) 100vw, 50vw"
                         className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
