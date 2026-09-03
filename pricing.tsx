@@ -9,7 +9,7 @@ export function Pricing() {
         <SectionHeading
           eyebrow="Pricing"
           title={<>Starting points, not <span className="text-gold-gradient">guesswork</span></>}
-          description="Real starting prices for each service. Final cost depends on your scope — message me on WhatsApp with a sentence about the project and I'll come back with an exact quote."
+          description="Real starting prices for each service. Final cost depends on your scope, message me on WhatsApp with a sentence about the project and I'll come back with an exact quote."
         />
 
         {/* Clean list with a number, the service, and a clearly separated price block */}
@@ -41,13 +41,13 @@ export function Pricing() {
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{plan.description}</p>
                 </div>
 
-                {/* Price block — more space, separated by a thin gold rule on desktop */}
+                {/* Price block, more space, separated by a thin gold rule on desktop */}
                 <div className="sm:col-span-6 sm:border-l sm:border-gold/20 sm:pl-6">
                   {plan.customQuoted ? (
                     <>
                       <p className="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Pricing</p>
                       <p className="mt-3 font-heading text-xl font-bold text-gold">Custom-quoted</p>
-                      <p className="mt-1.5 text-sm text-muted-foreground">Priced per project — tell me the goal and I&apos;ll come back with a number.</p>
+                      <p className="mt-1.5 text-sm text-muted-foreground">Priced per project, tell me the goal and I&apos;ll come back with a number.</p>
                     </>
                   ) : (
                     <>

@@ -11,7 +11,7 @@ export function Process() {
           description="Six steps. You always know which step we're on, what's next, and what I need from you."
         />
 
-        {/* Two-column process: number on the left, content on the right — no overlap. */}
+        {/* Two-column process: number on the left, content on the right, no overlap. */}
         <ol className="mt-8 space-y-8">
           {processSteps.map((step, i) => (
             <li key={step.number} className="grid gap-4 sm:grid-cols-[4rem_1fr] sm:items-start">

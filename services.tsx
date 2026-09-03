@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Camera, Globe, Rocket, Sparkles, Palette, ArrowUpRight, Check, type LucideIcon } from 'lucide-react'
 import { SectionHeading } from '@/components/section-heading'
 import { services } from '@/lib/site-data'
@@ -13,14 +14,14 @@ export function Services() {
           align="left"
           eyebrow="Services"
           title={<>What I actually build<span className="text-gold">.</span></>}
-          description="Five focused services. Each one starts from a blank file and is shaped around your business — not pulled from a folder of starter themes."
+          description="Five focused services. Each one starts from a blank file and is shaped around your business, not pulled from a folder of starter themes."
         />
 
         <div className="mt-8 space-y-8 lg:space-y-10">
           {services.map((service, i) => {
             const Icon = iconMap[service.icon] ?? Sparkles
             const hasImage = Boolean(service.image)
-            // Alternate image side for visual rhythm — but only for image services
+            // Alternate image side for visual rhythm, but only for image services
             const imageLeft = hasImage && i % 2 === 0
 
             return (
@@ -36,13 +37,13 @@ export function Services() {
                     <div className={`relative h-full min-h-[320px] overflow-hidden lg:min-h-full ${imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
                       <Image
                         src={service.image!}
-                        alt={`${service.title} — visual`}
+                        alt={`${service.title}, visual`}
                         fill
                         sizes="(max-width: 1024px) 100vw, 50vw"
                         className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent" />
-                      {/* Icon badge over the image — solid, no glassmorphism */}
+                      {/* Icon badge over the image, solid, no glassmorphism */}
                       <div className="absolute left-3 top-3 flex size-11 items-center justify-center border border-gold/30 bg-background text-gold transition-colors group-hover:bg-gold group-hover:text-black lg:left-5 lg:top-5">
                         <Icon className="size-5" strokeWidth={1.6} />
                       </div>
@@ -68,10 +69,17 @@ export function Services() {
                         {service.cta}
                         <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                       </a>
+                      <Link
+                        href={`/services/${service.slug}`}
+                        className="mt-3 inline-flex items-center gap-1.5 self-start text-sm font-medium text-muted-foreground transition-colors hover:text-gold"
+                      >
+                        How it works
+                        <ArrowUpRight className="size-3.5" />
+                      </Link>
                     </div>
                   </div>
                 ) : (
-                  /* Text-only service (Landing Pages) — clean, no image, "one page, one job" */
+                  /* Text-only service (Landing Pages), clean, no image, "one page, one job" */
                   <div className="flex flex-col p-7 sm:p-9">
                     <div className="flex items-center gap-4">
                       <span className="flex size-11 shrink-0 items-center justify-center border border-gold/30 bg-background text-gold transition-colors group-hover:bg-gold group-hover:text-black">
@@ -96,6 +104,13 @@ export function Services() {
                       {service.cta}
                       <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </a>
+                    <Link
+                      href={`/services/${service.slug}`}
+                      className="mt-3 inline-flex items-center gap-1.5 self-start text-sm font-medium text-muted-foreground transition-colors hover:text-gold"
+                    >
+                      How it works
+                      <ArrowUpRight className="size-3.5" />
+                    </Link>
                   </div>
                 )}
               </article>
@@ -103,14 +118,14 @@ export function Services() {
           })}
         </div>
 
-        {/* Bottom banner — different shape from the cards above */}
+        {/* Bottom banner, different shape from the cards above */}
         <div className="mt-8 flex flex-col items-start justify-between gap-6 border-l-2 border-gold/40 bg-gradient-to-r from-gold/[0.06] to-transparent p-7 sm:flex-row sm:items-center">
           <div>
             <h3 className="font-heading text-xl font-bold text-foreground">
               Not sure which service fits?
             </h3>
             <p className="mt-2 max-w-xl text-sm text-muted-foreground">
-              Send me a message on WhatsApp with a sentence about your business. I&apos;ll tell you which service actually fits — and which one doesn&apos;t.
+              Send me a message on WhatsApp with a sentence about your business. I&apos;ll tell you which service actually fits, and which one doesn&apos;t.
             </p>
           </div>
           <a

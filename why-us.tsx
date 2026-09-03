@@ -22,7 +22,7 @@ export function WhyUs() {
                 key={item.title}
                 className={`group grid gap-5 py-7 sm:grid-cols-12 sm:items-start ${flip ? 'sm:[direction:rtl]' : ''}`}
               >
-                {/* Large number — the structural anchor, replaces the identical icon badge */}
+                {/* Large number, the structural anchor, replaces the identical icon badge */}
                 <div className="sm:col-span-2 sm:[direction:ltr]">
                   <span className="font-heading text-5xl font-bold text-gold/25 tabular-nums sm:text-6xl">
                     {String(i + 1).padStart(2, '0')}

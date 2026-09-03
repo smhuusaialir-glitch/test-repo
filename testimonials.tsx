@@ -21,7 +21,7 @@ export function Testimonials() {
           </blockquote>
           <figcaption className="mt-8 flex items-center gap-3 text-sm">
             <span className="font-semibold text-foreground">{testimonials[0].name}</span>
-            <span className="text-muted-foreground">— {testimonials[0].role}</span>
+            <span className="text-muted-foreground">({testimonials[0].role})</span>
           </figcaption>
         </figure>
       </div>

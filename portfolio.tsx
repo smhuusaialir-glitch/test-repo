@@ -14,19 +14,19 @@ export function Portfolio() {
           align="left"
           eyebrow="Portfolio"
           title={<>Selected <span className="text-gold-gradient">work</span></>}
-          description="A small set of recent projects. Each one was built from a blank file — no recycled layout, no stock template dressed up."
+          description="A small set of recent projects. Each one was built from a blank file, no recycled layout, no stock template dressed up."
         />
 
         {/* 2-column grid so every image is large and the whole artwork is visible. */}
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {portfolio.map((item, i) => (
             <article key={`${item.title}-${i}`} className="group flex h-full min-w-0 flex-col border border-white/10 bg-card">
-              {/* Image box — square, object-cover so every card is the same size */}
+              {/* Image box, square, object-cover so every card is the same size */}
               <figure className="relative aspect-square w-full shrink-0 overflow-hidden bg-secondary/30">
                 {item.image ? (
                   <Image
                     src={item.image}
-                    alt={`${item.title} — ${item.category}`}
+                    alt={`${item.title}, ${item.category}`}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     loading={i === 0 ? 'eager' : 'lazy'}
@@ -71,7 +71,7 @@ export function Portfolio() {
 
         <div className="mt-8 border-l-2 border-gold/30 pl-5">
           <p className="text-sm text-muted-foreground">
-            More recent work lives on Instagram —{' '}
+            More recent work lives on Instagram,{' '}
             <a href={company.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-semibold text-gold transition-colors hover:text-champagne">
               {company.instagramHandle}
               <InstagramIcon className="size-3.5" />

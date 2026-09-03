@@ -5,7 +5,7 @@ import { company } from '@/lib/site-data'
 
 const points = [
   'Every project starts from a blank file',
-  'You talk to me — the person doing the work',
+  'You talk to me, the person doing the work',
   'A six-step process, not a black box',
   'Built for the phone first, expanded to desktop',
 ]
@@ -17,7 +17,7 @@ export function About() {
         {/* Asymmetric: image and text stretch to the same height, like the service cards. */}
         <div className="grid items-stretch gap-8 lg:grid-cols-12 lg:gap-12">
           <div className="relative h-full min-h-[300px] lg:col-span-5">
-            {/* Creative environment image — fills the full text column height */}
+            {/* Creative environment image, fills the full text column height */}
             <div className="relative h-full overflow-hidden rounded-2xl border border-white/10 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.8)]">
               <Image
                 src="/images/about-creative.jpg"
@@ -28,7 +28,7 @@ export function About() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
             </div>
-            {/* Name plate — solid, offset and slightly off the card edge */}
+            {/* Name plate, solid, offset and slightly off the card edge */}
             <div className="absolute -bottom-4 -right-3 border border-gold/30 bg-background px-5 py-3 sm:-right-5">
               <p className="font-heading text-sm font-bold text-gold">Hussain Ali</p>
               <p className="text-xs text-muted-foreground">Founder &amp; Designer</p>
@@ -40,11 +40,11 @@ export function About() {
               align="left"
               eyebrow="About"
               title={<>A studio of one, <span className="text-gold-gradient">on purpose</span></>}
-              description="Hussain Designs is the creative practice of Hussain Ali — a visual and web designer who works alone, by choice."
+              description="Hussain Designs is the creative practice of Hussain Ali, a visual and web designer who works alone, by choice."
             />
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               I help brands build websites, social content and brand visuals that feel like they belong to one
-              business — not a template someone else is also using. Every concept
+              business, not a template someone else is also using. Every concept
               is drawn around your identity, refined through direct conversation with me, and delivered with the files
               actually organised.
             </p>

@@ -2,7 +2,7 @@ import { CheckCircle2, ArrowRight, MessageCircle } from 'lucide-react'
 import { company } from '@/lib/site-data'
 
 export const metadata = {
-  title: 'Thank You — Your Enquiry Is In',
+  title: 'Thank You : Your Enquiry Is In',
   description: 'Your project enquiry has been received. Hussain will reply on WhatsApp shortly.',
   robots: { index: false, follow: false },
 }
@@ -15,7 +15,7 @@ export default function ThankYouPage() {
           <CheckCircle2 className="size-8" strokeWidth={1.6} />
         </div>
         <h1 className="mt-6 font-heading text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-          Thank you — your enquiry is in.
+          Thank you : your enquiry is in.
         </h1>
         <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
           I&apos;ve received your details and will personally reply on WhatsApp shortly. If you opened WhatsApp

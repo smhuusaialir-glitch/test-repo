@@ -8,7 +8,7 @@ import { company, stats } from '@/lib/site-data'
 export function Hero() {
   return (
     <section id="hero" className="relative flex min-h-screen items-center overflow-hidden pt-24">
-      {/* Hand-placed diagonal rule as an anchoring mark — not a glow orb */}
+      {/* Hand-placed diagonal rule as an anchoring mark, not a glow orb */}
       <div className="pointer-events-none absolute inset-0" />
 
       <div className="relative mx-auto w-full max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
@@ -25,7 +25,7 @@ export function Hero() {
             </h1>
 
             <p className="mt-7 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-              I help brands build a presence that feels intentional — websites, landing pages, social
+              I help brands build a presence that feels intentional, websites, landing pages, social
               content and brand visuals, all drawn from the same place. No page builder, no recycled
               template, no one between you and the work.
             </p>
@@ -52,7 +52,7 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Hero laptop image — controlled 3:2 crop, never taller than text, top-aligned */}
+          {/* Hero laptop image, controlled 3:2 crop, never taller than text, top-aligned */}
           <div className="lg:col-span-5">
             <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.8)]">
               <Image
@@ -69,7 +69,7 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Stats strip — centered */}
+        {/* Stats strip, centered */}
         <div className="mx-auto mt-12 grid max-w-2xl grid-cols-2 justify-items-center gap-x-8 gap-y-6 border-l-2 border-gold/30 pl-6 sm:grid-cols-4 sm:pl-8">
           {stats.map((stat) => (
             <div key={stat.label}>

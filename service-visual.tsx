@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils'
 /**
  * Custom inline-SVG mini mockups for each service card.
  * One cohesive system: shared browser-dot / corner treatment, gold accent on dark.
- * No raster images — sharp at every screen size, instant to load.
+ * No raster images, sharp at every screen size, instant to load.
  */
 
 const GOLD = '#D4AF37'
@@ -30,7 +30,7 @@ function WindowChrome({ id, dotsX = 14 }: { id: string; dotsX?: number }) {
   )
 }
 
-/* 1. Website Design & Development — browser window with nav, hero, CTA, 3-col grid */
+/* 1. Website Design & Development, browser window with nav, hero, CTA, 3-col grid */
 function WebsiteDesignVisual() {
   return (
     <svg viewBox="0 0 400 240" className="h-full w-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -76,7 +76,7 @@ function WebsiteDesignVisual() {
   )
 }
 
-/* 2. Graphic Design — poster/flyer layout: bold headline block, image area, text lines */
+/* 2. Graphic Design, poster/flyer layout: bold headline block, image area, text lines */
 function GraphicDesignVisual() {
   return (
     <svg viewBox="0 0 400 240" className="h-full w-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -92,7 +92,7 @@ function GraphicDesignVisual() {
         </linearGradient>
       </defs>
       <rect width="400" height="240" fill="url(#gd-bg)" />
-      {/* Poster sheet — slightly off-center, with a print-bleed shadow */}
+      {/* Poster sheet, slightly off-center, with a print-bleed shadow */}
       <rect x="120" y="18" width="160" height="204" rx="4" fill={SURFACE} stroke={GOLD} strokeOpacity="0.25" strokeWidth="1" />
       <rect x="124" y="22" width="160" height="204" rx="4" fill={SURFACE} opacity="0.4" />
       <rect x="120" y="18" width="160" height="204" rx="4" fill="none" stroke={GOLD} strokeOpacity="0.25" strokeWidth="1" />
@@ -105,7 +105,7 @@ function GraphicDesignVisual() {
       <circle cx="200" cy="106" r="16" fill="url(#gd-gold)" fillOpacity="0.18" />
       <path d="M 188 130 L 200 110 L 212 130 Z" fill="url(#gd-gold)" fillOpacity="0.22" />
       <rect x="184" y="126" width="32" height="14" rx="2" fill="url(#gd-gold)" fillOpacity="0.12" />
-      {/* Small text lines — caption / details */}
+      {/* Small text lines, caption / details */}
       <rect x="132" y="154" width="100" height="4" rx="2" fill={GOLD} fillOpacity="0.5" />
       <rect x="132" y="164" width="136" height="3.5" rx="1.75" fill={TEXT_HI} fillOpacity="0.2" />
       <rect x="132" y="172" width="120" height="3.5" rx="1.75" fill={TEXT_HI} fillOpacity="0.15" />
@@ -113,7 +113,7 @@ function GraphicDesignVisual() {
       {/* Footer bar on poster */}
       <rect x="132" y="198" width="60" height="8" rx="4" fill="url(#gd-gold)" fillOpacity="0.6" />
       <rect x="200" y="200" width="68" height="4" rx="2" fill={TEXT_HI} fillOpacity="0.15" />
-      {/* Corner crop marks — print artwork signature */}
+      {/* Corner crop marks, print artwork signature */}
       <path d="M 116 14 L 116 22 M 116 14 L 124 14" stroke={GOLD} strokeOpacity="0.4" strokeWidth="1" />
       <path d="M 284 14 L 284 22 M 284 14 L 276 14" stroke={GOLD} strokeOpacity="0.4" strokeWidth="1" />
       <path d="M 116 226 L 116 218 M 116 226 L 124 226" stroke={GOLD} strokeOpacity="0.4" strokeWidth="1" />
@@ -122,7 +122,7 @@ function GraphicDesignVisual() {
   )
 }
 
-/* 3. Social Media Design — 3 square post cards in a grid with avatars + caption lines */
+/* 3. Social Media Design, 3 square post cards in a grid with avatars + caption lines */
 function SocialMediaVisual() {
   return (
     <svg viewBox="0 0 400 240" className="h-full w-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -138,7 +138,7 @@ function SocialMediaVisual() {
         </linearGradient>
       </defs>
       <rect width="400" height="240" fill="url(#sm-bg)" />
-      {/* Three square post cards — 2 on top row, 1 offset below to break the grid */}
+      {/* Three square post cards, 2 on top row, 1 offset below to break the grid */}
       {[
         { x: 40, y: 24 },
         { x: 156, y: 24 },
@@ -170,7 +170,7 @@ function SocialMediaVisual() {
   )
 }
 
-/* 4. Branding / Visual Design — mini brand style guide: logo mark, color swatches, type samples */
+/* 4. Branding / Visual Design, mini brand style guide: logo mark, color swatches, type samples */
 function BrandingVisual() {
   return (
     <svg viewBox="0 0 400 240" className="h-full w-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -191,7 +191,7 @@ function BrandingVisual() {
       {/* Section label */}
       <rect x="74" y="32" width="70" height="5" rx="2.5" fill={GOLD} fillOpacity="0.55" />
       <rect x="74" y="41" width="40" height="3" rx="1.5" fill={TEXT_HI} fillOpacity="0.15" />
-      {/* Logo mark placeholder — a geometric monogram in a circle */}
+      {/* Logo mark placeholder, a geometric monogram in a circle */}
       <circle cx="200" cy="78" r="26" fill="none" stroke="url(#br-gold)" strokeOpacity="0.5" strokeWidth="1.5" />
       <path d="M 188 78 L 200 64 L 212 78 L 200 92 Z" fill="url(#br-gold)" fillOpacity="0.7" />
       <circle cx="200" cy="78" r="5" fill={SURFACE} stroke={GOLD} strokeWidth="1" />
@@ -213,7 +213,7 @@ function BrandingVisual() {
           <rect x={s.x} y="188" width="22" height="3" rx="1.5" fill={TEXT_HI} fillOpacity="0.12" />
         </g>
       ))}
-      {/* Type sample lines — like a type spec */}
+      {/* Type sample lines, like a type spec */}
       <rect x="240" y="150" width="40" height="5" rx="2.5" fill={GOLD} fillOpacity="0.5" />
       <text x="240" y="178" fontFamily="Georgia, serif" fontSize="16" fill={TEXT_HI} fillOpacity="0.85" fontStyle="italic">Aa</text>
       <rect x="262" y="168" width="64" height="3.5" rx="1.75" fill={TEXT_HI} fillOpacity="0.2" />
@@ -225,7 +225,7 @@ function BrandingVisual() {
   )
 }
 
-/* 5. Landing Pages — single-column focused page: headline, one CTA, feature list */
+/* 5. Landing Pages, single-column focused page: headline, one CTA, feature list */
 function LandingPageVisual() {
   return (
     <svg viewBox="0 0 400 240" className="h-full w-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -241,19 +241,19 @@ function LandingPageVisual() {
         </linearGradient>
       </defs>
       <rect width="400" height="240" fill="url(#lp-bg)" />
-      {/* Narrow single-column page — visually distinct from the wide website mockup */}
+      {/* Narrow single-column page, visually distinct from the wide website mockup */}
       <rect x="130" y="16" width="140" height="208" rx="6" fill={SURFACE} stroke={GOLD} strokeOpacity="0.2" strokeWidth="1" />
       <WindowChrome id="lp" dotsX={144} />
-      {/* Minimal nav — just a logo dot */}
+      {/* Minimal nav, just a logo dot */}
       <circle cx="144" cy="33" r="3" fill={GOLD} fillOpacity="0.6" />
       <rect x="152" y="30" width="24" height="6" rx="3" fill={GOLD} fillOpacity="0.4" />
-      {/* Headline bar — centered, single block */}
+      {/* Headline bar, centered, single block */}
       <rect x="146" y="48" width="108" height="10" rx="5" fill="url(#lp-gold)" fillOpacity="0.7" />
       <rect x="158" y="64" width="84" height="4" rx="2" fill={TEXT_HI} fillOpacity="0.2" />
       <rect x="166" y="72" width="68" height="4" rx="2" fill={TEXT_HI} fillOpacity="0.15" />
-      {/* One CTA button — centered, single */}
+      {/* One CTA button, centered, single */}
       <rect x="170" y="86" width="60" height="12" rx="6" fill="url(#lp-gold)" />
-      {/* Feature list — stacked rows with a check dot, not a 3-col grid */}
+      {/* Feature list, stacked rows with a check dot, not a 3-col grid */}
       {[
         { y: 112 },
         { y: 132 },
@@ -288,7 +288,7 @@ export function ServiceVisual({ icon, className }: { icon: string; className?: s
       <div className="h-full w-full transition-transform duration-500 ease-out group-hover:scale-[1.04]">
         <Visual />
       </div>
-      {/* Subtle gold glow on hover — the only hover effect, applied uniformly across the set */}
+      {/* Subtle gold glow on hover, the only hover effect, applied uniformly across the set */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gold/0 to-gold/0 opacity-0 transition-opacity duration-500 group-hover:from-gold/[0.08] group-hover:opacity-100" />
       <div className="absolute inset-0 bg-gradient-to-t from-card via-card/10 to-transparent" />
     </div>

@@ -15,7 +15,7 @@ export function SectionHeading({
 }) {
   return (
     <div className={cn('max-w-2xl', align === 'center' ? 'mx-auto text-center' : 'text-left', className)}>
-      {/* Eyebrow with a hand-placed dot mark — asymmetric on left, symmetric on center */}
+      {/* Eyebrow with a hand-placed dot mark, asymmetric on left, symmetric on center */}
       <span className="text-xs font-semibold uppercase tracking-[0.25em] text-gold">
         {eyebrow}
       </span>
