@@ -1,10 +1,4 @@
-fix: comma splices from dash removal, footer links, and page titles
-
-- Fixed comma splices across hero, pricing, contact, and service procedures
-- Replaced awkward colons in page titles with pipe separator
-- Footer services now link to dedicated procedure pages
-- Fixed alt text formatting and WhatsApp message header
-- Thank you page heading punctuation fixed
+feat: add favicon and explicit icon metadata for browser tabs
 
 Generated with [Devin](https://devin.ai)
 

@@ -29,6 +29,10 @@ export const metadata: Metadata = {
   },
   description:
     'Hussain Designs creates modern websites, graphic design, landing pages, social media design and brand visuals for businesses and brands.',
+  icons: {
+    icon: '/images/logo.png',
+    apple: '/images/logo.png',
+  },
   keywords: [
     'Hussain Designs', 'Hussain Ali', 'Social Media Design', 'Website Design',
     'Landing Page Design', 'Website Development', 'Premium Design Studio',
